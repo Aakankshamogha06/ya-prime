@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: https://prop.yatrader.io/signup
+Disallow: https://prop.yatrader.io/login
+Sitemap: https://yatrader.io/sitemap.xml
+
+

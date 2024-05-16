@@ -1,0 +1,213 @@
+
+
+<section class="blog_banner breadcrumb-banner ">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="banner_content text-center">
+					<h4 class="text-primary">
+						Blogs
+					</h4>
+					<h1 class="text-white about-heading">
+						Learn how to think better by taking notes
+					</h1>
+					<p class="text-white">
+						YaPrime blogs are about financial-related trading topics for in-depth knowledge before trading. We will cover all the topics like stocks, commodities, forex, cryptocurrency, and various aspects of the financial market.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="blog_content">
+	<div class="container">
+		<div class="row gy-4">
+			<div class="col-lg-4 col-md-6">
+				<div class="card blog-card">
+					<a href="blog-detail.php">
+						<img src="<?=base_url()?>public/web/images/1.jpeg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body blog-content">
+		              <a href="blog-detail.php">
+		              	<h5 class="card-title">
+			              	Essential Websites Features Needed for a Forex Brokerage Firms | YaPrime Web Development Services
+			              </h5>
+		              </a>
+		              <hr style="border: 1px solid #ccc;">
+		            	<div class="meta_blog">
+		            		<span>
+		            			<i class="fa fa-calendar" aria-hidden="true"></i> 16-01-2024
+			            	</span>
+			            	<span>
+			            		<i class="fa fa-user" aria-hidden="true"></i>  Author Name
+			            	</span>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card blog-card">
+					<a href="blog-detail.php">
+						<img src="<?=base_url()?>public/web/images/1.jpeg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body blog-content">
+		              <a href="blog-detail.php">
+		              	<h5 class="card-title">
+			              	Essential Websites Features Needed for a Forex Brokerage Firms | YaPrime Web Development Services
+			              </h5>
+		              </a>
+		              <hr style="border: 1px solid #ccc;">
+		            	<div class="meta_blog">
+		            		<span>
+		            			<i class="fa fa-calendar" aria-hidden="true"></i> 16-01-2024
+			            	</span>
+			            	<span>
+			            		<i class="fa fa-user" aria-hidden="true"></i>  Author Name
+			            	</span>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card blog-card">
+					<a href="blog-detail.php">
+						<img src="<?=base_url()?>public/web/images/1.jpeg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body blog-content">
+		              <a href="blog-detail.php">
+		              	<h5 class="card-title">
+			              	Essential Websites Features Needed for a Forex Brokerage Firms | YaPrime Web Development Services
+			              </h5>
+		              </a>
+		              <hr style="border: 1px solid #ccc;">
+		            	<div class="meta_blog">
+		            		<span>
+		            			<i class="fa fa-calendar" aria-hidden="true"></i> 16-01-2024
+			            	</span>
+			            	<span>
+			            		<i class="fa fa-user" aria-hidden="true"></i>  Author Name
+			            	</span>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card blog-card">
+					<a href="blog-detail.php">
+						<img src="<?=base_url()?>public/web/images/1.jpeg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body blog-content">
+		              <a href="blog-detail.php">
+		              	<h5 class="card-title">
+			              	Essential Websites Features Needed for a Forex Brokerage Firms | YaPrime Web Development Services
+			              </h5>
+		              </a>
+		              <hr style="border: 1px solid #ccc;">
+		            	<div class="meta_blog">
+		            		<span>
+		            			<i class="fa fa-calendar" aria-hidden="true"></i> 16-01-2024
+			            	</span>
+			            	<span>
+			            		<i class="fa fa-user" aria-hidden="true"></i>  Author Name
+			            	</span>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card blog-card">
+					<a href="blog-detail.php">
+						<img src="<?=base_url()?>public/web/images/1.jpeg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body blog-content">
+		              <a href="blog-detail.php">
+		              	<h5 class="card-title">
+			              	Essential Websites Features Needed for a Forex Brokerage Firms | YaPrime Web Development Services
+			              </h5>
+		              </a>
+		              <hr style="border: 1px solid #ccc;">
+		            	<div class="meta_blog">
+		            		<span>
+		            			<i class="fa fa-calendar" aria-hidden="true"></i> 16-01-2024
+			            	</span>
+			            	<span>
+			            		<i class="fa fa-user" aria-hidden="true"></i>  Author Name
+			            	</span>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card blog-card">
+					<a href="blog-detail.php">
+						<img src="<?=base_url()?>public/web/images/1.jpeg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body blog-content">
+		              <a href="blog-detail.php">
+		              	<h5 class="card-title">
+			              	Essential Websites Features Needed for a Forex Brokerage Firms | YaPrime Web Development Services
+			              </h5>
+		              </a>
+		              <hr style="border: 1px solid #ccc;">
+		            	<div class="meta_blog">
+		            		<span>
+		            			<i class="fa fa-calendar" aria-hidden="true"></i> 16-01-2024
+			            	</span>
+			            	<span>
+			            		<i class="fa fa-user" aria-hidden="true"></i>  Author Name
+			            	</span>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card blog-card">
+					<a href="blog-detail.php">
+						<img src="<?=base_url()?>public/web/images/1.jpeg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body blog-content">
+		              <a href="blog-detail.php">
+		              	<h5 class="card-title">
+			              	Essential Websites Features Needed for a Forex Brokerage Firms | YaPrime Web Development Services
+			              </h5>
+		              </a>
+		              <hr style="border: 1px solid #ccc;">
+		            	<div class="meta_blog">
+		            		<span>
+		            			<i class="fa fa-calendar" aria-hidden="true"></i> 16-01-2024
+			            	</span>
+			            	<span>
+			            		<i class="fa fa-user" aria-hidden="true"></i>  Author Name
+			            	</span>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card blog-card">
+					<a href="blog-detail.php">
+						<img src="<?=base_url()?>public/web/images/1.jpeg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body blog-content">
+		              <a href="blog-detail.php">
+		              	<h5 class="card-title">
+			              	Essential Websites Features Needed for a Forex Brokerage Firms | YaPrime Web Development Services
+			              </h5>
+		              </a>
+		              <hr style="border: 1px solid #ccc;">
+		            	<div class="meta_blog">
+		            		<span>
+		            			<i class="fa fa-calendar" aria-hidden="true"></i> 16-01-2024
+			            	</span>
+			            	<span>
+			            		<i class="fa fa-user" aria-hidden="true"></i>  Author Name
+			            	</span>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
