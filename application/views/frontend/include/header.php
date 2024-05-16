@@ -1,10 +1,42 @@
+<?php
+$this->load->helper('url');
+
+$current_uri = uri_string();
+$segments = explode('/', $current_uri);
+$page_name = end($segments);
+
+$seo_data = $this->seo_model->getseo_data($page_name);
+$seo_data_blog = $this->Blog_detail_model->blog_detail_data_seo($page_name);
+$seo_title = "Start Your Own Forex Brokerage | Forex Broker Services"; // Default title
+
+$meta_description = '';
+$keywords = '';
+
+if ($seo_data) {
+    $row = reset($seo_data);
+    $seo_title = htmlspecialchars($row->title);
+    $keywords = htmlspecialchars($row->keywords);
+    $meta_description = htmlspecialchars($row->meta_description);
+}
+
+// Check for blog SEO data separately
+if ($seo_data_blog) {
+    foreach ($seo_data_blog as $row) {
+        $seo_title = htmlspecialchars($row->title);
+        $meta_description = htmlspecialchars($row->meta_description);
+        $keywords = htmlspecialchars($row->keywords);
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Start Your Own Forex Brokerage | Forex Broker Services</title>
+   <title><?=$seo_title?></title>
+   <meta name="description" content="<?=$meta_description?>"/>
+    <meta name="keywords" content="<?=$keywords?>" />
    <link rel="shortcut icon" href="<?=base_url()?>public/web/images/favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="<?=base_url()?>public/web/vendor/bootstrap/css/bootstrap.min.css" />
    <link rel="stylesheet" type="text/css" href="<?=base_url()?>public/web/css/style.css">
@@ -26,7 +58,7 @@
    <header class="header navbar-dark" id="StickyHeader">
       <nav class="navbar navbar-expand-lg p-0">
          <div class="container-fluid">
-            <a class="navbar-brand" href="<?=base_url()?>index">
+            <a class="navbar-brand" href="<?=base_url()?>">
                <img src="<?=base_url()?>public/web/images/logo-prime.svg" alt="Logo" title="YaPrime Logo" height="70px">
             </a>
             <button class="mobile-menu-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">

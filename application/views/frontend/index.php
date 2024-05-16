@@ -589,7 +589,7 @@
                     <p class="text-white">
                         Take your brokerage to new heights with YaPrime's cutting-edge white label solutions. Leverage our battle-tested infrastructure and robust trading ecosystem to elevate your offerings and capture more market share. Forge a path to exponential growth without limits.
                     </p>
-                     <a href="broker-setup.php" class="btn btn-warning mt-4">
+                     <a href="<?=base_url()?>broker-setup" class="btn btn-warning mt-4">
                         Learn More
                     </a>
                 </div>
@@ -610,7 +610,7 @@
                     <p class="text-white">
                         At YaPrime, we understand that running a Forex brokerage involves more than just trading and client interactions. It requires seamless backend operations to ensure everything runs smoothly. That's where our Admin Consultation services come in.
                     </p>
-                     <a href="broker-setup.php" class="btn btn-warning mt-4">
+                     <a href="<?=base_url()?>broker-setup" class="btn btn-warning mt-4">
                         Learn More
                     </a>
                 </div>
@@ -625,7 +625,7 @@
                     <p class="text-white">
                         Supercharge your relationship management with YaPrime's cutting-edge CRM suite. This robust solution empowers you to deliver hyper-personalized experiences, fostering unbreakable bonds with your valued client base.
                     </p>
-                     <a href="broker-setup.php" class="btn btn-warning mt-4">
+                     <a href="<?=base_url()?>broker-setup" class="btn btn-warning mt-4">
                         Learn More
                     </a>
                 </div>

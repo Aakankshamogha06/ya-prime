@@ -64,7 +64,7 @@ class blog_detail_model extends CI_Model
         LEFT JOIN 
             blog_category ON blog_detail.blog_category = blog_category.id
         WHERE 
-            REPLACE(LOWER(blog_detail.title), ' ', '-') = '$uid'
+            REPLACE(LOWER(blog_detail.keywords), ' ', '-') = '$uid'
     ");
 
     if ($result->num_rows() > 0) {
@@ -83,15 +83,15 @@ class blog_detail_model extends CI_Model
 	}
 
 
-	public function blog_detail_update_data($data)
+	public function blog_detail_update_data($data,$blog_image)
 	{
 		// echo ("hi");
 		$newdata = [
-			'seo_title' => $data['seo_title'],
-			'seo_keywords' => $data['seo_keywords'],
-			'seo_desc' => $data['seo_desc'],
+			'title' => $data['title'],
+			'keywords' => $data['keywords'],
+			'meta_description' => $data['meta_description'],
 			'blog_name' => $data['blog_name'],
-			'blog_image'=>$data['blog_image'],
+			'blog_image' => $blog_image,
             'blog_category' => $data['blog_category'],
             'blog_author' => $data['blog_author'],
             'blog_date' => $data['blog_date'],

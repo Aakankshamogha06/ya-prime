@@ -1,9 +1,9 @@
-<div class="container-fluid">
-    <div class="container-fluid">
-        
+<div class="content">
+    <div class="container-fluid pt-4 px-4">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-12">
 
-            <div class="card">
-                <div class="card-body">
+                <div class="bg-secondary rounded h-100 p-4">
                     <?php foreach ($view_blog_detail as $row) :
 
                     ?>
@@ -23,11 +23,11 @@
                                 <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label for="inputEmail4" class="form-label">SEO Title  <span class="text-danger">*</span> </label>
-                                    <input type="text" name="seo_title" parsley-trigger="change" class="form-control" id="seo_title" value="<?= $row->seo_title ?>" placeholde="SEO Title  " required>
+                                    <input type="text" name="title" parsley-trigger="change" class="form-control" id="title" value="<?= $row->title ?>" placeholde="SEO Title  " required>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="inputEmail4" class="form-label">SEO Keywords  <span class="text-danger">*</span> </label>
-                                    <input type="text" name="seo_keywords" parsley-trigger="change" class="form-control" id="seo_keywords" value="<?= $row->seo_keywords ?>" placeholde="SEO Keywords  " required>
+                                    <input type="text" name="keywords" parsley-trigger="change" class="form-control" id="keywords" value="<?= $row->keywords ?>" placeholde="SEO Keywords  " required>
                                 </div>
                             </div>
                            
@@ -38,7 +38,7 @@
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="inputEmail4" class="form-label">SEO Description <span class="text-danger">*</span> </label>
-                                    <textarea type="text" name="seo_desc" parsley-trigger="change" class="form-control" id="seo_desc" value="<?= $row->seo_desc ?>" placeholde="SEO Description " required></textarea>
+                                    <textarea type="text" name="meta_description" parsley-trigger="change" class="form-control" id="meta_description" placeholde="SEO Description " required><?= $row->meta_description ?></textarea>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="inputEmail4" class="form-label">Blog Image  <span class="text-danger">*</span> </label>
@@ -100,14 +100,12 @@
 <script>
 
            CKEDITOR.replace('long_desc', {
-
                format_tags: 'p;h1;h2;h3;h4;h5;h6'
-
            });
-
            CKEDITOR.replace('blog_desc', {
-
 format_tags: 'p;h1;h2;h3;h4;h5;h6'
-
 });
+CKEDITOR.replace('meta_description', {
+               format_tags: 'p;h1;h2;h3;h4;h5;h6'
+           });
 </script>

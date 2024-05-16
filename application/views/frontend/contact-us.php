@@ -50,25 +50,25 @@
 				<div class="contact-form">
 					<h2 class="mb-2 text-primary">Talk to us!</h2>
 					<p class="text-white">Get your exclusive invite to speak with our team of Forex experts!</p>
-					<form class="form-group mt-3 mt-sm-4 mb-0">
+					<form method="POST" action="<?= base_url('admin/contact_us/contact_us_submit_data'); ?>" enctype="multipart/form-data" class="form-group mt-3 mt-sm-4 mb-0">
 						<div class="row">
 							<div class="col-6 mb-3">
-								<input class="form-control form-item" type="text" placeholder="Name">
+								<input class="form-control form-item" type="text" name="name" placeholder="Name">
 							</div>
 							<div class="col-6 mb-3">
-								<input class="form-control form-item" type="email" placeholder="Email">
+								<input class="form-control form-item" type="email" name="email" placeholder="Email">
 							</div>
 							<div class="col-6 mb-3">
-								<input class="form-control form-item" type="text" placeholder="Mobile">
+								<input class="form-control form-item" type="text" name="phone_number" placeholder="Mobile">
 							</div>
 							<div class="col-6 mb-3">
-								<input class="form-control form-item" type="text" placeholder="Location">
+								<input class="form-control form-item" name="location" type="text" placeholder="Location">
 							</div>
 							<div class="col-12 mb-3">
-								<textarea class="form-control form-item" placeholder="Message"></textarea>
+								<textarea class="form-control form-item" name="message" placeholder="Message"></textarea>
 							</div> 
 							<div class="col-12">
-								<button class="btn-4 mt-3">Submit Now</button>
+								<button class="btn-4 mt-3" name="submit">Submit Now</button>
 							</div>
 						</div>
 					</form>

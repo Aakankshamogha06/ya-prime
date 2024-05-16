@@ -55,13 +55,21 @@ $route['translate_uri_dashes'] = FALSE;
 $route['admin'] = 'admin/auth';
 
 // ADMIN PANEL
-// blog ****************
-$route['blog/add_blog'] = 'admin/blog/add_blog';
-$route['blog/blog_submit_data'] = 'admin/blog/blog_submit_data';
-$route['blog/view_blog']        = 'admin/blog/blog_view';
-$route['blog/edit_blog/(:any)'] = 'admin/blog/blog_edit/$1';
-$route['blog/blog_update_data'] = 'admin/blog/blog_update_data';
-$route['blog/blog_delete/(:any)'] = 'admin/blog/blog_delete/$1';
+// blog_detail ****************
+$route['blog_detail/add_blog_detail'] = 'admin/blog_detail/add_blog_detail';
+$route['blog_detail/blog_detail_submit_data'] = 'admin/blog_detail/blog_detail_submit_data';
+$route['blog_detail/view_blog_detail']        = 'admin/blog_detail/blog_detail_view';
+$route['blog_detail/edit_blog_detail/(:any)'] = 'admin/blog_detail/blog_detail_edit/$1';
+$route['blog_detail/blog_detail_update_data'] = 'admin/blog_detail/blog_detail_update_data';
+$route['blog_detail/blog_detail_delete/(:any)'] = 'admin/blog_detail/blog_detail_delete/$1';
+
+// blog_category ****************
+$route['blog_category/add_blog_category'] = 'admin/blog_category/add_blog_category';
+$route['blog_category/blog_category_submit_data'] = 'admin/blog_category/blog_category_submit_data';
+$route['blog_category/view_blog_category']        = 'admin/blog_category/blog_category_view';
+$route['blog_category/edit_blog_category/(:any)'] = 'admin/blog_category/blog_category_edit/$1';
+$route['blog_category/blog_category_update_data'] = 'admin/blog_category/blog_category_update_data';
+$route['blog_category/blog_category_delete/(:any)'] = 'admin/blog_category/blog_category_delete/$1';
 
 // seo ****************
 $route['seo/add_seo'] = 'admin/seo/add_seo';
@@ -74,7 +82,7 @@ $route['seo/seo_delete/(:any)'] = 'admin/seo/seo_delete/$1';
 
 // WEBSITE
 $route['about-us'] = 'website/about_us';
-$route['blog-detail'] = 'website/blog_detail';
+$route['blog/(:any)'] = 'website/blog_detail/$1';
 $route['blog'] = 'website/blog';
 $route['broker-setup'] = 'website/broker_setup';
 $route['career-details'] = 'website/career_details';

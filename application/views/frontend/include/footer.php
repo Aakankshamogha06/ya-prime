@@ -22,27 +22,27 @@
           <h6>About company</h6>
           <ul>
             <li>
-              <a href="about-us.php">
+              <a href="<?=base_url()?>about-us">
                 About us
               </a>
             </li>
             <li>
-              <a href="why-choose-us.php">
+              <a href="<?=base_url()?>why-choose-us">
                 Why choose us
               </a>
             </li>
             <li>
-              <a href="blog.php">
+              <a href="<?=base_url()?>blog">
                 Our Blog
               </a>
             </li>
             <li>
-              <a href="careers.php">
+              <a href="<?=base_url()?>careers">
                 Careers
               </a>
             </li>
             <!-- <li>
-              <a href="our-team.php">
+              <a href="<?=base_url()?>our-team">
                 Meet our Team
               </a>
             </li> -->
@@ -54,27 +54,27 @@
           <h6>Useful Link</h6>
           <ul>
             <li>
-              <a href="broker-setup.php">
+              <a href="<?=base_url()?>broker-setup">
                 Broker Setup
               </a>
             </li>
             <li>
-              <a href="liquidity.php">
+              <a href="<?=base_url()?>liquidity">
                 Liquidity Solutions
               </a>
             </li>
             <li>
-              <a href="institutional-clients.php">
+              <a href="i<?=base_url()?>nstitutional-clients">
                 Institutional Clients
               </a>
             </li>
             <li>
-              <a href="metatrader-support.php">
+              <a href="<?=base_url()?>metatrader-support">
                 Metatrader Support
               </a>
             </li>
             <!-- <li>
-              <a href="portfolio.php">
+              <a href="<?=base_url()?>portfolio">
                 Portfolio
               </a>
             </li> -->
@@ -118,7 +118,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="copyrights">
-          <p class="mb-3">All Rights Reserved © 2016-<?= date('Y') ?> | <a href="index.php">YaPrime</a></p>
+          <p class="mb-3">All Rights Reserved © 2016-<?= date('Y') ?> | <a href="<?=base_url()?>">YaPrime</a></p>
         </div>
       </div>
       <div class="col-md-6">

@@ -4,7 +4,7 @@
     <div class="col-lg-12">
                     
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Basic Form</h6>
+                            <h6 class="mb-4">Add User</h6>
                         <?php echo form_open(base_url('admin/users/add'));  ?>
                         <div class="form-row">
                             <div class="form-group col-md-12">

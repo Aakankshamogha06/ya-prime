@@ -110,9 +110,23 @@ class blog_detail extends MY_Controller
 					$data = [];
 					if ($this->input->post()) {
 						$data = $this->input->post();
+						$config['upload_path'] = 'uploads';
+						$config['allowed_types'] = 'jpg|jpeg|png|gif|webp';
+						$config['encrypt_name'] = TRUE;
+						$this->load->library('upload',$config);
+						$this->upload->initialize($config);
+						if($this->upload->do_upload('blog_image'))
+						{
+							$uploadData = $this->upload->data();
+							$blog_image = $uploadData['file_name'];
+						}
+						else
+						{
+							$error = array('error' => $this->upload->display_errors());
+							print_r($error);
+						}
 
-
-						if ($this->blog_detail_model->blog_detail_update_data($data) == true) {
+						if ($this->blog_detail_model->blog_detail_update_data($data,$blog_image) == true) {
 
 							redirect("blog_detail/view_blog_detail");
 						} ?><?php
