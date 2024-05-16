@@ -148,7 +148,7 @@
               <img src="<?=base_url()?>public/web/images/requst-quote.png" class="img-fluid">
             </div>
             <div class="col-lg-6 pop_up_form_class">
-              <form>
+            <form method="POST" action="<?= base_url('admin/request_demo/request_demo_submit_data'); ?>" enctype="multipart/form-data" >
                 <div class="row g-4 form-group mb-3">
                   <div class="col-lg-6 col-md-12">
                     <label for="formGroupExampleInput">Full Name</label>
@@ -219,7 +219,7 @@
                   <label for="exampleFormControlTextarea1">Give me a brief about your requirement</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="50" placeholder="Message" name="message"></textarea>
                 </div>
-                <button type="submit" class="unique_anchor_one btn btn-primary">Submit</button>
+                <button type="submit" name="submit" class="unique_anchor_one btn btn-primary">Submit</button>
               </form>
             </div>
           </div>
