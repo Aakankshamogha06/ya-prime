@@ -86,12 +86,12 @@
         <div class="address">
 
 
-          <p><i class="fa-solid fa-location-dot"></i> Suite 305, Griffith Corporate Centre, Kingstown P.O. Box
-            1510, Beachmont Kingstown St. Vincent and the Grenadines</p>
-
+          <p><i class="fa-solid fa-location-dot"></i> Nassima Tower - 701 Sheikh Zayed Rd - Trade Centre - Trade Centre 1 - Dubai</p>
+          <p><i class="fa-solid fa-location-dot"></i> C/o Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius
+</p>
           <p><i class="fa-solid fa-phone"></i> +357 22030234</p>
 
-          <p> <i class="fa-solid fa-envelope"></i> support@yaprime.com</p>
+          <p> <i class="fa-solid fa-envelope"></i> info@yaprime.com</p>
         </div>
       </div>
 
@@ -99,9 +99,9 @@
 
     <hr class="footer_hr" />
     <p>YaPrime is the industry leader in the Forex and CFD markets. registered in Vanuata. We provide certain services
-      like Forex White Label, Company formation, License service under the company name. Registered office @ Law
-      Partners House, Kumul Highway, Port Vila, Vanuatu Postal Address Po Box 212, Port Vila, Vanuatu. For any
-      queries, Please contact us at info@yaprime.com</p>
+      like Forex White Label, Company formation, License service under the company name. Registered office @ C/o 
+      Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius
+      . For any queries, Please contact us at info@yaprime.com</p>
     <p><b>Disclaimer:</b> All product, logo and company names are trademarks™ or registered® trademarks of their
       respective holders.Use of them is not intended to violate any company norms.</p>
     <p><b>Copyrights:</b> YaPrime is a technology and service provider. YaPrime is neither a broker nor a liquidity
@@ -118,7 +118,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="copyrights">
-          <p class="mb-3">All Rights Reserved © 2016-<?= date('Y') ?> | <a href="<?=base_url()?>">YaPrime</a></p>
+          <p class="mb-3">All Rights Reserved © 2016-<?= date('Y') ?> | <a href="<?=base_url()?>">YaPrime is managed by Yagroup</a></p>
         </div>
       </div>
       <div class="col-md-6">
@@ -148,7 +148,7 @@
               <img src="<?=base_url()?>public/web/images/requst-quote.png" class="img-fluid">
             </div>
             <div class="col-lg-6 pop_up_form_class">
-              <form>
+            <form method="POST" action="<?= base_url('admin/request_demo/request_demo_submit_data'); ?>" enctype="multipart/form-data" >
                 <div class="row g-4 form-group mb-3">
                   <div class="col-lg-6 col-md-12">
                     <label for="formGroupExampleInput">Full Name</label>
@@ -219,7 +219,7 @@
                   <label for="exampleFormControlTextarea1">Give me a brief about your requirement</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="50" placeholder="Message" name="message"></textarea>
                 </div>
-                <button type="submit" class="unique_anchor_one btn btn-primary">Submit</button>
+                <button type="submit" name="submit" class="unique_anchor_one btn btn-primary">Submit</button>
               </form>
             </div>
           </div>

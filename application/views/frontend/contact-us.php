@@ -53,19 +53,19 @@
 					<form method="POST" action="<?= base_url('admin/contact_us/contact_us_submit_data'); ?>" enctype="multipart/form-data" class="form-group mt-3 mt-sm-4 mb-0">
 						<div class="row">
 							<div class="col-6 mb-3">
-								<input class="form-control form-item" type="text" name="name" placeholder="Name">
+								<input class="form-control form-item" type="text" name="name" placeholder="Name" required>
 							</div>
 							<div class="col-6 mb-3">
-								<input class="form-control form-item" type="email" name="email" placeholder="Email">
+								<input class="form-control form-item" type="email" name="email" placeholder="Email" required>
 							</div>
 							<div class="col-6 mb-3">
-								<input class="form-control form-item" type="text" name="phone_number" placeholder="Mobile">
+								<input class="form-control form-item" type="text" name="phone_number" placeholder="Mobile" required>
 							</div>
 							<div class="col-6 mb-3">
-								<input class="form-control form-item" name="location" type="text" placeholder="Location">
+								<input class="form-control form-item" name="location" type="text" placeholder="Location" required>
 							</div>
 							<div class="col-12 mb-3">
-								<textarea class="form-control form-item" name="message" placeholder="Message"></textarea>
+								<textarea class="form-control form-item" name="message" placeholder="Message" required></textarea>
 							</div> 
 							<div class="col-12">
 								<button class="btn-4 mt-3" name="submit">Submit Now</button>
