@@ -251,23 +251,7 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
                <div class="tab-pane fade active show" id="nav-forex" role="tabpanel" aria-labelledby="nav-forex-tab">
-                  <iframe src="https://fxpricing.com/fx-widget/market-currency-rates-widget.php?id=1,2,3,5,14,20&click_target=blank&theme=dark&tm-cr=212529&hr-cr=FFFFFF13&by-cr=28A745&sl-cr=DC3545&flags=circle&value_alignment=center&column=price,ask,bid,chg,chg_per,spread,time&lang=en&font=Arial, sans-serif" width="100%" height="290" style="border: 1px solid #eee;"></iframe>
-                  <style type="text/css">
-                     #fx-pricing-widget-copyright {
-                        text-align: center;
-                        font-size: 13px;
-                        font-family: sans-serif;
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        color: #9db2bd;
-                     }
-
-                     #fx-pricing-widget-copyright a {
-                        text-decoration: unset;
-                        color: #bb3534;
-                        font-weight: 600;
-                     }
-                  </style>
+                  <iframe src="https://fxpricing.com/fx-widget/market-currency-rates-widget.php?id=16,15,14,114,50,35,52,12,6,2,4,3,697,5,704,68,10,1,48,40,41,113,42,39,65,1243,62,112,38,18,19,26,23,20,1856,29,30,67,31,33,32&click_target=blank&theme=dark&tm-cr=212529&hr-cr=FFFFFF13&by-cr=28A745&sl-cr=DC3545&flags=circle&value_alignment=center&column=price,ask,bid,chg,chg_per,spread,time&lang=en&font=Arial, sans-serif" width="100%" height="1750" style="border: 1px solid #eee" scrolling="no"></iframe>
                </div>
                <div class="tab-pane fade" id="nav-crypto" role="tabpanel" aria-labelledby="nav-crypto-tab">
                   <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">

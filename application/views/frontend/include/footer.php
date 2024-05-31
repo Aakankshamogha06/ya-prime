@@ -9,12 +9,12 @@
           assist other Forex Brokers in realizing their dream and making you the expert that your heart
           always yearned to be.</p>
         <div class="social-media-icon">
-          <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></i></a>
-          <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-          <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
-          <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/yaprimeofficial/"> <i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/YaPrimeofficial"><i class="fa-brands fa-x-twitter"></i></i></a>
+          <a href="https://www.linkedin.com/company/yaprime"> <i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/officialyaprime/"> <i class="fa-brands fa-instagram"></i></a>
+          <!-- <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+          <a href="#"> <i class="fa-brands fa-youtube"></i></a> -->
         </div>
       </div>
       <div class="col-md-2">
@@ -87,8 +87,9 @@
 
 
           <p><i class="fa-solid fa-location-dot"></i> Nassima Tower - 701 Sheikh Zayed Rd - Trade Centre - Trade Centre 1 - Dubai</p>
-          <p><i class="fa-solid fa-location-dot"></i> C/o Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius
-</p>
+            <!-- <p><i class="fa-solid fa-location-dot"></i> Suite 305, Griffith Corporate Centre, Kingstown P.O. Box
+            1510, Beachmont Kingstown St. Vincent and the Grenadines</p> -->
+            <p><i class="fa-solid fa-location-dot"></i> C/o Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius</p>
           <p><i class="fa-solid fa-phone"></i> +357 22030234</p>
 
           <p> <i class="fa-solid fa-envelope"></i> info@yaprime.com</p>
@@ -99,9 +100,8 @@
 
     <hr class="footer_hr" />
     <p>YaPrime is the industry leader in the Forex and CFD markets. registered in Vanuata. We provide certain services
-      like Forex White Label, Company formation, License service under the company name. Registered office @ C/o 
-      Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius
-      . For any queries, Please contact us at info@yaprime.com</p>
+      like Forex White Label, Company formation, License service under the company name. Registered office @ C/o Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius. For any
+      queries, Please contact us at info@yaprime.com</p>
     <p><b>Disclaimer:</b> All product, logo and company names are trademarks™ or registered® trademarks of their
       respective holders.Use of them is not intended to violate any company norms.</p>
     <p><b>Copyrights:</b> YaPrime is a technology and service provider. YaPrime is neither a broker nor a liquidity
@@ -118,7 +118,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="copyrights">
-          <p class="mb-3">All Rights Reserved © 2016-<?= date('Y') ?> | <a href="<?=base_url()?>">YaPrime is managed by Yagroup</a></p>
+          <p class="mb-3">All Rights Reserved © 2016-<?= date('Y') ?> | <a href="<?=base_url()?>">YaPrime</a></p>
         </div>
       </div>
       <div class="col-md-6">
@@ -138,7 +138,7 @@
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Create Your Prime Account </h5>
+        <h5 class="modal-title" id="exampleModalLabel">Request Quote </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -228,7 +228,7 @@
     </div>
   </div>
 </div>
-
+<br>
 
 <script src="<?=base_url()?>public/web/vendor/jquery/jquery.min.js"></script>
 <script src="<?=base_url()?>public/web/vendor/bootstrap/js/bootstrap.min.js"></script>
