@@ -1,6 +1,6 @@
 <?php
 	$cur_tab = $this->uri->segment(2) == '' ? 'dashboard' : $this->uri->segment(2);
-	?>
+?>
 <?php
 // Assuming you have access to the session data and user model
 $username = $this->session->userdata('username'); // Fetch username from session
@@ -14,17 +14,25 @@ $role = $this->session->userdata('role_name'); // Fetch role from session
   <a href="#" class="sidebar-toggler flex-shrink-0">
     <i class="fa fa-bars"></i>
   </a>
-  <form class="d-none d-md-flex ms-4">
-    <input class="form-control bg-dark border-0" type="search" placeholder="Search">
-  </form>
-  <div class="navbar-nav align-items-center ms-auto">
   
+  <!-- Left side (Search Bar) -->
+  
+
+  <!-- Center (Logo) -->
+  <div class="me-3">
+    <a href="https://yaprime.com">
+      <img src="<?= base_url() ?>public/web/images/logo-prime.svg" alt="Logo" style="height: 70px; margin-left:30px;">
+    </a>
+  </div>
+
+  <!-- Right side (Profile and Dropdown) -->
+  <div class="navbar-nav align-items-center ms-auto">
     <div class="nav-item dropdown">
       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-        <img class="rounded-circle me-lg-2" src="<?= base_url() ?>public/admin/img/user.jpg" alt="" style="width: 40px; height: 40px;">
+        <img class="rounded-circle me-lg-2" src="<?= base_url() ?>public/admin/img/profile.png" alt="" style="width: 40px; height: 40px;">
         <span class="d-none d-lg-inline-flex">
-							<?= ucwords($this->session->userdata('name')); ?>
-						</span>
+          <?= ucwords($this->session->userdata('name')); ?>
+        </span>
       </a>
       <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
         <a href="#" class="dropdown-item">My Profile</a>
@@ -35,10 +43,6 @@ $role = $this->session->userdata('role_name'); // Fetch role from session
   </div>
 </nav>
 <!-- Navbar End -->
-
-
-
-
 
 <!-- Footer Start -->
 <!-- <div class="container-fluid pt-4 px-4">

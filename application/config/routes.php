@@ -79,6 +79,14 @@ $route['seo/edit_seo/(:any)'] = 'admin/seo/seo_edit/$1';
 $route['seo/seo_update_data'] = 'admin/seo/seo_update_data';
 $route['seo/seo_delete/(:any)'] = 'admin/seo/seo_delete/$1';
 
+// contact_us ****************
+$route['contact_us/add_contact_us'] = 'admin/contact_us/add_contact_us';
+$route['contact_us/contact_us_submit_data'] = 'admin/contact_us/contact_us_submit_data';
+$route['contact_us/view_contact_us']        = 'admin/contact_us/contact_us_view';
+$route['contact_us/edit_contact_us/(:any)'] = 'admin/contact_us/contact_us_edit/$1';
+$route['contact_us/contact_us_update_data'] = 'admin/contact_us/contact_us_update_data';
+$route['contact_us/contact_us_delete/(:any)'] = 'admin/contact_us/contact_us_delete/$1';
+
 
 // WEBSITE
 $route['about-us'] = 'website/about_us';

@@ -168,6 +168,15 @@
                     <label for="inputState">Your Country</label>
                     <input type="text" placeholder="Your Country" name="country" class="form-control">
                   </div>
+                  <div class="col-lg-6">
+								<div class="formgroup">
+									<img src="<?php echo $captcha['image']; ?>" class="capt mb-2" alt="CAPTCHA Image">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="formgroup">
+									<input type="text" name="captcha" class="form-control" id="captcha" placeholder="CAPTCHA" required>
+								</div>
                 </div>
                 <div class="row g-4 form-group mb-3">
                   <div class="col-md-12">

@@ -66,8 +66,9 @@ class Website extends CI_Controller
 
     public function contact_us()
     {
+        $data['captcha'] = $this->generate_captcha();
         $this->load->view('frontend/include/header');
-        $this->load->view('frontend/contact-us');
+        $this->load->view('frontend/contact-us',$data);
         $this->load->view('frontend/include/footer');
     }
 
@@ -118,5 +119,51 @@ class Website extends CI_Controller
         $this->load->view('frontend/include/header');
         $this->load->view('frontend/why-choose-us');
         $this->load->view('frontend/include/footer');
+    }
+   public function check_captcha($str)
+{
+    $user_input = strtolower($str);
+    $captcha_code = strtolower($this->session->userdata('captcha_code'));
+
+    if ($user_input === $captcha_code) {
+        return TRUE;
+    } else {
+        $this->form_validation->set_message('check_captcha', 'The CAPTCHA code entered is incorrect.');
+        return FALSE;
+    }
+}
+
+
+    private function generate_captcha()
+    {
+
+        $captcha_code = substr(md5(uniqid(mt_rand(), true)), 0, 5);
+
+        $this->session->set_userdata('captcha_code', $captcha_code);
+
+        $data['captcha']['image'] = $this->create_captcha_image($captcha_code);
+
+        return $data['captcha'];
+
+
+    }
+
+    private function create_captcha_image($captcha_code)
+    {
+
+        $img_width = 282;
+        $img_height = 37;
+        $font_size = 22;
+        $image = imagecreatetruecolor($img_width, $img_height);
+        $background_color = imagecolorallocate($image, 249, 195, 17);
+        $text_color = imagecolorallocate($image, 1, 1, 1);
+        imagefill($image, 0, 0, $background_color);
+        imagestring($image, 5, 10, 8, $captcha_code, $text_color);
+        ob_start();
+        imagepng($image);
+        $image_data = ob_get_clean();
+        imagedestroy($image);
+        $base64_image = 'data:image/png;base64,' . base64_encode($image_data);
+        return $base64_image;
     }
 } 

@@ -50,7 +50,7 @@
 				<div class="contact-form">
 					<h2 class="mb-2 text-primary">Talk to us!</h2>
 					<p class="text-white">Get your exclusive invite to speak with our team of Forex experts!</p>
-					<form method="POST" action="<?= base_url('admin/contact_us/contact_us_submit_data'); ?>" enctype="multipart/form-data" class="form-group mt-3 mt-sm-4 mb-0">
+					<form method="POST" action="<?= base_url('contact_us/contact_us_data_submit'); ?>" enctype="multipart/form-data" class="form-group mt-3 mt-sm-4 mb-0">
 						<div class="row">
 							<div class="col-6 mb-3">
 								<input class="form-control form-item" type="text" name="name" placeholder="Name" required>
@@ -58,21 +58,38 @@
 							<div class="col-6 mb-3">
 								<input class="form-control form-item" type="email" name="email" placeholder="Email" required>
 							</div>
-							<div class="col-6 mb-3">
-								<input class="form-control form-item" type="text" name="phone_number" placeholder="Mobile" required>
+							<div class="col-lg-6 mb-3">
+								<input type="text" placeholder="Enter Contact Number" name="phone_number" id="phone_number" class="form-control" maxlength="10">
 							</div>
-							<div class="col-6 mb-3">
-								<input class="form-control form-item" name="location" type="text" placeholder="Location" required>
+
+							<script>
+								document.getElementById('phone_number').addEventListener('input', function(e) {
+									this.value = this.value.replace(/[^0-9]/g, '');
+								});
+							</script>
+							<div class="col-lg-6">
+								<div class="formgroup">
+									<img src="<?php echo $captcha['image']; ?>" class="capt mb-2" alt="CAPTCHA Image">
+								</div>
 							</div>
-							<div class="col-12 mb-3">
-								<textarea class="form-control form-item" name="message" placeholder="Message" required></textarea>
+							<div class="col-lg-6">
+								<div class="formgroup">
+									<input type="text" name="captcha" class="form-control" id="captcha" placeholder="CAPTCHA" required>
+								</div>
+								<div class="col-6 mb-3">
+									<input class="form-control form-item" name="location" type="text" placeholder="Location" required>
+								</div>
+								<div class="col-12 mb-3">
+									<textarea class="form-control form-item" name="message" placeholder="Message" required></textarea>
+								</div>
+
+								<div class="col-12">
+									<button class="btn-4 mt-3" name="submit">Submit Now</button>
+								</div>
 							</div>
-							<div class="col-12">
-								<button class="btn-4 mt-3" name="submit">Submit Now</button>
-							</div>
-						</div>
 					</form>
 				</div>
+
 			</div>
 		</div>
 	</div>
