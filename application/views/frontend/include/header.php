@@ -1,4 +1,5 @@
 <?php
+
 $this->load->helper('url');
 
 $current_uri = uri_string();
@@ -7,11 +8,11 @@ $page_name = end($segments);
 
 $seo_data = $this->seo_model->getseo_data($page_name);
 $seo_data_blog = $this->Blog_detail_model->blog_detail_data_seo($page_name);
-$seo_title = "Start Your Own Forex Brokerage | Forex Broker Services"; // Default title
+$seo_title = "Start Your Own Forex Brokerage | Forex Broker Services";
 
 $meta_description = '';
 $keywords = '';
-
+// print_r($seo_data_blog);
 if ($seo_data) {
    $row = reset($seo_data);
    $seo_title = htmlspecialchars($row->title);
@@ -20,14 +21,84 @@ if ($seo_data) {
 }
 
 // Check for blog SEO data separately
-if ($seo_data_blog) {
+// elseif ($seo_data_blog) {
+//    $seo_title = htmlspecialchars($seo_data_blog->title);
+//    $meta_description = htmlspecialchars($seo_data_blog->meta_description);
+//    $keywords = htmlspecialchars($seo_data_blog->keywords);
+
+// }else {
+//    // Add a debug message to see what's happening if no SEO data is found
+//    error_log('No SEO data found for page: ' . $page_name);
+// }
+elseif ($seo_data_blog) {
+   function compareStrings($str1, $str2)
+   {
+      $len1 = mb_strlen($str1);
+      $len2 = mb_strlen($str2);
+
+      if ($len1 !== $len2) {
+         return false;
+      }
+
+      for ($i = 0; $i < $len1; $i++) {
+         // Replace specific characters as needed
+         $char1 = str_replace([" ", "-"], "", mb_substr($str1, $i, 1));
+         $char2 = str_replace([" ", "-"], "", mb_substr($str2, $i, 1));
+
+         if (ord($char1) !== ord($char2)) {
+            return false;
+         }
+      }
+
+      return true;
+   }
+
+   function displayAsciiValues($str)
+   {
+      $len = mb_strlen($str);
+      for ($i = 0; $i < $len; $i++) {
+         echo mb_substr($str, $i, 1) . ' => ' . ord(mb_substr($str, $i, 1)) . '<br>';
+      }
+   }
+
+   function cleanString($str)
+   {
+      // Add additional character replacements as needed
+      $str = str_replace(["...", "..."], ["...", "..."], $str);
+      // Add more replacements if needed
+      return $str;
+   }
+
+   // Your original code
    foreach ($seo_data_blog as $row) {
-      $seo_title = htmlspecialchars($row->title);
-      $meta_description = htmlspecialchars($row->meta_description);
-      $keywords = htmlspecialchars($row->keywords);
+      $slugFromData = strtolower(trim($row->slug));
+      $pageName = strtolower(trim($page_name));
+
+      // Detect encoding and convert to UTF-8
+      $encodingSlug = mb_detect_encoding($slugFromData);
+      $encodingPage = mb_detect_encoding($pageName);
+
+      if ($encodingSlug !== 'UTF-8') {
+         $slugFromData = mb_convert_encoding($slugFromData, 'UTF-8', $encodingSlug);
+      }
+
+      if ($encodingPage !== 'UTF-8') {
+         $pageName = mb_convert_encoding($pageName, 'UTF-8', $encodingPage);
+      }
+
+      $cleanedSlug = cleanString($slugFromData);
+      $cleanedPageName = cleanString($pageName);
+
+      if (compareStrings($cleanedSlug, $cleanedPageName)) {
+         // echo('h');
+         $seo_title = $row->title;
+         $meta_description = $row->meta_description;
+         $keywords = $row->keywords;
+      } else {
+         error_log('No SEO data found for page: ' . $page_name);
+      }
    }
 }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,8 +108,8 @@ if ($seo_data_blog) {
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title><?= $seo_title ?></title>
    <meta name="description" content="<?= $meta_description ?>" />
-   <meta name="keywords" content="<?= $keywords ?>" />
-   <link rel="canonical" href="<?=current_url()?>">
+   <meta name="keywords" content="<?= $keywords ?>">
+   <link rel="canonical" href="<?= current_url() ?>">
    <link rel="shortcut icon" href="<?= base_url() ?>public/web/images/favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="<?= base_url() ?>public/web/vendor/bootstrap/css/bootstrap.min.css" />
    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>public/web/css/style.css">
@@ -52,20 +123,52 @@ if ($seo_data_blog) {
    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2CT2TEW5G"></script>
    <meta name="google-site-verification" content="caFkPG5ppzd0wrcG-W9enabUow1o2dqneHhOmAN5yP0" />
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+   <script>
+      window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-S2CT2TEW5G');
-</script>
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-S2CT2TEW5G');
+   </script>
 </head>
 
 <body>
-   <?php
-   $this->load->view('frontend/include/trading-view-widget');
-   ?>
 
+   <!-- <?php
+         $this->load->view('frontend/include/trading-view-widget');
+         ?> -->
+   <!-- topbar start -->
+   <!-- <section class="top-bar">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6 con-info">
+               <div class="contact-information">
+                  <ul class="contact_info">
+                     <li>
+                        <a href="#"><i class="fa-solid fa-phone"></i> +357 22030234</a>
+                     </li>
+                     <li>
+                        <a href="#"><i class="fa-solid fa-envelope"></i> support@yaprime.com</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="top-bar-buttons">
+                  <div class="request-quote">
+                     <button type="button" class="btn bttn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Request Quote</button>
+                  </div>
+                  <div class="request-quote">
+                     <button type="button" class="btn bttn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Demo</button>
+                  </div>
+
+               </div>
+            </div>
+   </section> -->
+   <!-- top bar end -->
    <header class="header navbar-dark" id="StickyHeader">
       <nav class="navbar navbar-expand-lg p-0">
          <div class="container-fluid">
@@ -81,81 +184,18 @@ if ($seo_data_blog) {
                      <a href="<?= base_url() ?>" class="nav-link">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        About
-                        <svg class="ms-1" width="12" height="6" viewBox="0 0 12 6" fill="black" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M11 1L5.99999 5L1 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
+                     <a href="<?= base_url() ?>about-us" class="nav-link" role="button" aria-expanded="false">
+                        About Us
                      </a>
-                     <div class="dropdown-menu">
-                        <div class="container">
-                           <button class="border-0 bg-transparent text-white mb-3 d-block d-lg-none">
-                              <i class="fa-solid fa-chevron-left"></i>
-                              <span>Back</span>
-                           </button>
-                           <div class="h-vh-80 overflow-y-auto overflow-x-hidden">
-                              <ul class="list-unstyled row gx-5 gy-4">
-                                 <div class="col-lg-12">
-                                    <div class="h6 text-uppercase mb-4">ABOUT YaPrime</div>
-                                    <div class="container">
-                                       <div class="row">
-                                          <div class="col-lg-4">
-                                             <ol class="list-unstyled row gx-0 mx-0 mb-3 drop-inner-links">
-                                                <li class="col-12 mb-2">
-                                                   <a href="<?= base_url() ?>about-us">About us</a>
-                                                </li>
-                                                <!-- <li class="col-12 mb-2">
-                                              <a href="careers">Careers</a>
-                                           </li> -->
-                                                <!-- <li class="col-12 mb-2">
-                                              <a href="contact-us">Contact Us</a>
-                                           </li> -->
-                                             </ol>
-                                          </div>
-                                          <div class="col-lg-4">
-                                             <ol class="list-unstyled row gx-0 mx-0 mb-3 drop-inner-links">
-                                                <li class="col-12 mb-2">
-                                                   <a href="<?= base_url() ?>why-choose-us">Why Choose Us</a>
-                                                </li>
-                                                <!-- <li class="col-12 mb-2">
-                                              <a href="#">Portfolio</a>
-                                           </li> -->
-                                                <!-- <li class="col-12 mb-2">
-                                              <a href="our-team">Meet Our Team</a>
-                                           </li> -->
-                                             </ol>
-                                          </div>
-                                          <div class="col-lg-4">
-                                             <ol class="list-unstyled row gx-0 mx-0 mb-3 drop-inner-links">
-                                                <!-- <li class="col-12 mb-2">
-                                              <a href="blog">Our Blog</a>
-                                           </li> -->
-                                             </ol>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
                   </li>
                   <li class="nav-item">
                      <a href="<?= base_url() ?>liquidity" class="nav-link" role="button" aria-expanded="false">
                         Liquidity
                      </a>
-
-                  </li>
-
-                  <li class="nav-item">
-                     <a href="<?= base_url() ?>broker-setup" class="nav-link" role="button" aria-expanded="false">
-                        Broker Setup
-                     </a>
-
                   </li>
                   <li class="nav-item">
-                     <a href="<?= base_url() ?>institutional-clients" class="nav-link" role="button" aria-expanded="false">
-                        Institutional Clients
+                     <a href="<?= base_url() ?>metatrader-setup" class="nav-link" role="button" aria-expanded="false">
+                        Metatrader Setup
                      </a>
                   </li>
                   <li class="nav-item">
@@ -164,16 +204,27 @@ if ($seo_data_blog) {
                      </a>
                   </li>
                   <li class="nav-item">
+                     <a href="<?= base_url() ?>white-label" class="nav-link" role="button" aria-expanded="false">
+                        White Label
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="<?= base_url() ?>institutional-account" class="nav-link" role="button" aria-expanded="false">
+                        Institutional Account
+                     </a>
+                  </li>
+                  <li class="nav-item">
                      <a href="<?= base_url() ?>blog" class="nav-link">Blog</a>
                   </li>
                   <li class="nav-item">
-                     <a href="<?= base_url() ?>contact-us" class="nav-link">Contact us</a>
+                     <a href="<?= base_url() ?>contact-us" class="nav-link">Contact</a>
                   </li>
 
                </ul>
             </div>
             <div class="request-quote">
-               <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Request Quote</button>
+               <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                  data-bs-target="#exModal">Request Demo</button>
             </div>
          </div>
       </nav>
@@ -184,21 +235,15 @@ if ($seo_data_blog) {
          <div class="offcanvas-body p-0">
             <div class="mobile-menu-wrap">
                <ul class="mobile-menu-list">
-                  <li><a href="<?= base_url() ?>" class="menu-link">Home</a></li>
-                  <li><a href="" class="menu-link moblie-dropdwon">About <i class="fa-solid fa-chevron-down"></i></a>
-                     <div class="dropdown-mb-menu">
-                        <ul>
-                           <li><a href="<?= base_url() ?>about-us">About Us</a></li>
-                           <li><a href="<?= base_url() ?>why-choose-us">Why Choose Us</a></li>
-                        </ul>
-                     </div>
-                  </li>
+                  <!-- <li><a href="<?= base_url() ?>" class="menu-link">Home</a></li> -->
+                  <li><a href="<?= base_url() ?>anout-us" class="menu-link">About</a></li>
                   <li><a href="<?= base_url() ?>liquidity" class="menu-link">Liquidity</a></li>
-                  <li><a href="<?= base_url() ?>broker-setup" class="menu-link"> Broker Setup</a> </li>
-                  <li><a href="<?= base_url() ?>institutional-clients" class="menu-link">Institutional Clients </a></li>
+                  <li><a href="<?= base_url() ?>metatrader-setup" class="menu-link"> Metatrader Setup</a> </li>
                   <li><a href="<?= base_url() ?>metatrader-support" class="menu-link">Metatrader Support</a></li>
+                  <li><a href="<?= base_url() ?>white-label" class="menu-link">White Label</a></li>
+                  <li><a href="<?= base_url() ?>institutional-account" class="menu-link">Institutional Account </a></li>
                   <li><a href="<?= base_url() ?>blog" class="menu-link">Blog</a></li>
-                  <li> <a href="<?= base_url() ?>contact-us" class="menu-link">Contact us</a></li>
+                  <li> <a href="<?= base_url() ?>contact-us" class="menu-link">Contact</a></li>
                   <li class="ps-2"><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Request Quote</button></li>
                </ul>
 

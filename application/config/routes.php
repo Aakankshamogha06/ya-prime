@@ -87,6 +87,22 @@ $route['contact_us/edit_contact_us/(:any)'] = 'admin/contact_us/contact_us_edit/
 $route['contact_us/contact_us_update_data'] = 'admin/contact_us/contact_us_update_data';
 $route['contact_us/contact_us_delete/(:any)'] = 'admin/contact_us/contact_us_delete/$1';
 
+// request_demo ****************
+$route['request_demo/add_request_demo'] = 'admin/request_demo/add_request_demo';
+$route['request_demo/request_demo_submit_data'] = 'admin/request_demo/request_demo_submit_data';
+$route['request_demo/view_request_demo']        = 'admin/request_demo/request_demo_view';
+$route['request_demo/edit_request_demo/(:any)'] = 'admin/request_demo/request_demo_edit/$1';
+$route['request_demo/request_demo_update_data'] = 'admin/request_demo/request_demo_update_data';
+$route['request_demo/request_demo_delete/(:any)'] = 'admin/request_demo/request_demo_delete/$1';
+
+// request_quote ****************
+$route['request_quote/add_request_quote'] = 'admin/request_quote/add_request_quote';
+$route['request_quote/request_quote_submit_data'] = 'admin/request_quote/request_quote_submit_data';
+$route['request_quote/view_request_quote']        = 'admin/request_quote/request_quote_view';
+$route['request_quote/edit_request_quote/(:any)'] = 'admin/request_quote/request_quote_edit/$1';
+$route['request_quote/request_quote_update_data'] = 'admin/request_quote/request_quote_update_data';
+$route['request_quote/request_quote_delete/(:any)'] = 'admin/request_quote/request_quote_delete/$1';
+
 
 // WEBSITE
 $route['about-us'] = 'website/about_us';

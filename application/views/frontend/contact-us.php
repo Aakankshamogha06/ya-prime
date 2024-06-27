@@ -24,24 +24,24 @@
 						<i class="fa-solid fa-location-dot"></i>
 						Nassima Tower - 701 Sheikh Zayed Rd - Trade Centre - Trade Centre 1 - Dubai
 					</p>
-					<p class="text-white">
-						<i class="fa-solid fa-location-dot"></i>
-						C/o Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius
-					</p>
+
+					<p class="text-white"><i class="fa-solid fa-location-dot"></i> C/o Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius</p>
 					<p class="text-white">
 						<i class="fa-solid fa-phone"></i>
 						+357 22030234
 					</p>
 					<p class="text-white">
 						<i class="fa-solid fa-envelope"></i>
-						support@yaprime.com
+						info@yaprime.com
 					</p>
 					<div class="social-media-icons">
 						<h4 class="text-primary">Follow us</h4>
 						<a href="https://www.facebook.com/yaprimeofficial/"> <i class="fa-brands fa-facebook"></i></a>
-						<a href="https://twitter.com/YaPrimeofficial"><i class="fa-brands fa-x-twitter"></i></i></a>
+						<a href="https://twitter.com/YaPrimeofficial"><i class="fa-brands fa-x-twitter"></i></a>
 						<a href="https://www.linkedin.com/company/yaprime"> <i class="fa-brands fa-linkedin"></i></a>
 						<a href="https://www.instagram.com/officialyaprime/"> <i class="fa-brands fa-instagram"></i></a>
+						<!-- <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+			          	<a href="#"> <i class="fa-brands fa-youtube"></i></a> -->
 					</div>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 				<div class="contact-form">
 					<h2 class="mb-2 text-primary">Talk to us!</h2>
 					<p class="text-white">Get your exclusive invite to speak with our team of Forex experts!</p>
-					<form method="POST" action="<?= base_url('contact_us/contact_us_data_submit'); ?>" enctype="multipart/form-data" class="form-group mt-3 mt-sm-4 mb-0">
+					<form method="POST" action="<?= base_url('contact_us/contact_us_submit_data'); ?>" enctype="multipart/form-data" class="form-group mt-3 mt-sm-4 mb-0">
 						<div class="row">
 							<div class="col-6 mb-3">
 								<input class="form-control form-item" type="text" name="name" placeholder="Name" required>
@@ -67,33 +67,33 @@
 									this.value = this.value.replace(/[^0-9]/g, '');
 								});
 							</script>
+
+							<div class="col-6 mb-3">
+								<input class="form-control form-item" name="location" type="text" placeholder="Location" required>
+							</div>
 							<div class="col-lg-6">
 								<div class="formgroup">
-									<img src="<?php echo $captcha['image']; ?>" class="capt mb-2" alt="CAPTCHA Image">
+									<img src="<?= $captcha['image']; ?>" class="capt mb-2" alt="CAPTCHA Image">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="formgroup">
 									<input type="text" name="captcha" class="form-control" id="captcha" placeholder="CAPTCHA" required>
 								</div>
-								<div class="col-6 mb-3">
-									<input class="form-control form-item" name="location" type="text" placeholder="Location" required>
-								</div>
-								<div class="col-12 mb-3">
-									<textarea class="form-control form-item" name="message" placeholder="Message" required></textarea>
-								</div>
-
-								<div class="col-12">
-									<button class="btn-4 mt-3" name="submit">Submit Now</button>
-								</div>
 							</div>
+							<div class="col-12 mb-3">
+								<textarea class="form-control form-item" name="message" placeholder="Message" required></textarea>
+							</div>
+							<div class="col-12">
+								<button class="btn-4 mt-3" name="submit">Submit Now</button>
+							</div>
+						</div>
 					</form>
 				</div>
-
 			</div>
 		</div>
 	</div>
 </section>
 <section class="contact_map">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3885.088660084922!2d-61.2237977!3d13.1568073!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c475150d7889919%3A0xec14007759a547d6!2sGriffith%20Corporate%20Centre!5e0!3m2!1sen!2sin!4v1715689400235!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.417698886318!2d57.49261647474626!3d-20.241504448083294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5b485e823a99%3A0x664d7713ca9d6a73!2sThe%20Catalyst!5e0!3m2!1sen!2sin!4v1718773157873!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
