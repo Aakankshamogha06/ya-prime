@@ -180,9 +180,9 @@ elseif ($seo_data_blog) {
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                <ul class="navbar-nav">
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                      <a href="<?= base_url() ?>" class="nav-link">Home</a>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
                      <a href="<?= base_url() ?>about-us" class="nav-link" role="button" aria-expanded="false">
                         About Us
@@ -236,7 +236,7 @@ elseif ($seo_data_blog) {
             <div class="mobile-menu-wrap">
                <ul class="mobile-menu-list">
                   <!-- <li><a href="<?= base_url() ?>" class="menu-link">Home</a></li> -->
-                  <li><a href="<?= base_url() ?>anout-us" class="menu-link">About</a></li>
+                  <li><a href="<?= base_url() ?>about-us" class="menu-link">About</a></li>
                   <li><a href="<?= base_url() ?>liquidity" class="menu-link">Liquidity</a></li>
                   <li><a href="<?= base_url() ?>metatrader-setup" class="menu-link"> Metatrader Setup</a> </li>
                   <li><a href="<?= base_url() ?>metatrader-support" class="menu-link">Metatrader Support</a></li>

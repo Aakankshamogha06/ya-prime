@@ -15,9 +15,6 @@
                   <th>EMAIL</th>
                   <th>PHONE NUMBER</th>
                   <th>COUNTRY</th>
-                  <th>ARE YOU A?</th>
-                  <th>PRODUCTS</th>
-                  <th>QOUTE</th>
                   <th>MESSAGE</th>
                 
                 <th style="width: 150px;" class="text-right">Option</th>
@@ -33,9 +30,6 @@
                     <td><?= $row->email ?></td>
                     <td><?= $row->contact_number ?></td>
                     <td><?= $row->country ?></td>
-                    <td><?= $row->areyoua ?></td>
-                    <td><?= $row->products ?></td>
-                    <td><?= $row->qoute ?></td>
                     <td><?= $row->message ?></td>
                   <td class="text-right">
                         <a href="<?= base_url('admin/request_demo/request_demo_delete/' . $row->id); ?>" onclick="return confirm('Are you sure want to delete ?');">

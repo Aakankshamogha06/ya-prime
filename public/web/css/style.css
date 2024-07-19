@@ -10,6 +10,50 @@ body{
 .text-primary{
     color: #FFC008!important;
 }
+/*Top Bar*/
+
+.top-bar{
+    background: #ffc107;
+    padding: 10px 0;
+}
+.contact_info{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact_info li{
+    list-style: none;
+}
+.contact_info a{
+    text-decoration: none;
+    color: #fff;
+    transition-duration: .3s;
+}
+.contact_info a:hover{
+    color: #000;
+}
+.bttn.btn-primary {
+    background: #000;
+    border-color: #000;
+}
+.bttn.btn-primary:focus-visible {
+    box-shadow: none;
+}
+.top-bar-buttons {
+    display: flex;
+    justify-content: center;
+}
+.top-bar-buttons .request-quote {
+    margin: 0 5px;
+}
+.con-info{
+    display: flex;
+    align-items: center;
+}
+
+
+/*Top Bar*/
 
 /*Menu*/
 
@@ -668,6 +712,27 @@ section.mission_visionn {
     padding: 80px 0;
     background: #000;
 }
+.white-label-slide {
+    background: #000;
+    padding:  20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 100%;
+    border-radius: 15px;
+}
+.white-label-slide img{
+   width: 64px !important;
+}
+.article-items {
+    display: flex;
+    flex: 1 0 auto;
+    height: 100%;
+
+}
+.white-label-wrapper  .owl-carousel .owl-stage{
+    display: flex;
+}
 .white_lable_tabs .tab-para{
     text-align: left;
 }
@@ -717,6 +782,9 @@ section.mission_visionn {
     border-radius: 20px;
     height: 100%;
 }
+.unique-pills img{
+    max-width: 70px !important;
+}
 .benefits_b_s{
     width: 30%;
 }
@@ -729,6 +797,14 @@ section.mission_visionn {
     border-radius: 15px;
 }
 
+.owl-carousel11 .benefit{
+    background: #873a3a;
+    text-align: center;
+}
+.owl-carousel11 .benefit img{
+    margin:0 auto;
+
+}
 /*Broker Setup End*/
 
 
@@ -736,6 +812,13 @@ section.mission_visionn {
     background: radial-gradient(rgb(255 233 168 / 39%), rgb(0 0 0));
     padding: 30px;
     border-radius: 20px;
+    margin: 0 15px;
+}
+.broker-setup-row img{
+    width: 70%;
+}
+.broker-setup-row .col-md-7{
+    text-align: center;
 }
 
 /*Footer*/
@@ -794,27 +877,26 @@ section.mission_visionn {
 }
 
 /*pop Up Form*/
-
-
-/*About PAGE*/
-.about_banner{
-    background: url(../images/about-us.png);
-
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.about_banner::after {
+.breadcrumb-banner::after {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
-    background: radial-gradient(rgb(0 0 0), rgb(0 0 0));
+    background: linear-gradient(90deg, black, #000, #00000070);
     left: 0;
-    opacity: 0.7;
+    opacity: 1;
     z-index: 0;
 }
+.breadcrumb-banner{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*About PAGE*/
+
+
 .about-content-section{
     padding: 80px 0;
     background: #000;
@@ -836,7 +918,7 @@ ul.check-list li span{
 }
 
 .check-list span {
-    
+
     color: #ffc109;
 }
 .about-box-bg{
@@ -1068,24 +1150,7 @@ background: #302c26;
 /*Contact End*/
 
 /*Metatrader Support Start*/
-.meta_support_banner{
-    background: url(../images/metatrader-support.png);
 
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.meta_support_banner::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    background: radial-gradient(rgb(0 0 0), rgb(0 0 0));
-    left: 0;
-    opacity: 0.6;
-    z-index: 0;
-}
 .meta-intro{
     padding: 80px 0;
 }
@@ -1221,24 +1286,6 @@ background: #302c26;
 /*Career Details End*/
 
 /*Blog Start*/
-.blog_banner{
-    background: url(../images/blogs.png);
-
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.blog_banner::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    background: radial-gradient(rgb(0 0 0), rgb(0 0 0));
-    left: 0;
-    opacity: 0.7;
-    z-index: 0;
-}
 .blog_content{
     padding: 80px 0;
     background: #000;
@@ -1383,24 +1430,11 @@ background: #302c26;
 }
 
 /*institutional clients Start*/
-.institutional_clients_banner{
-    background: url(../images/institutional-clients.png);
 
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.institutional_clients_banner::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    background: radial-gradient(rgb(0 0 0), rgb(0 0 0));
-    left: 0;
-    opacity: 0.6;
-    z-index: 0;
-}  
+.institutional-clients-success{
+    padding: 80px 0;
+    background: #00000085;
+} 
 .institutional-clients-content{
     padding: 80px 0;
     background: #262626;
@@ -1519,24 +1553,6 @@ background: #302c26;
 /*Team End*/
 
 /*liquidity Started*/
-.liquidity_banner{
-    background: url(../images/liquidity-solutions.png);
-
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.liquidity_banner::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    background: radial-gradient(rgb(0 0 0), rgb(0 0 0));
-    left: 0;
-    opacity: 0.6;
-    z-index: 0;
-}
 .liquidity_pointers_ul {
     padding: 0;
     display: flex;
@@ -1685,6 +1701,7 @@ background: #302c26;
 }
 .image_content_box img {
     margin-right: 20px;
+    width: 64px;
 }
 .image_content_box h4{
     color: #FFC107;
@@ -1790,39 +1807,74 @@ background: #302c26;
     cursor: pointer;
     color: #fff;
 }
+.liquidity-risk-management{
+    padding: 80px 0;
+    color: #fff;
+    background:#000;
+}
+li.risk-li {
+    list-style: none;
+    font-size: 17px;
+/*    line-height: 40px;*/
+    background: url(../images/white-tick.png) no-repeat left 7px;
+    padding: 0 0 0px 30px;
+    color: #fff
+}
 
 
 /*Liquidity End*/
 
-/*broker setup banner start*/
-.broker_setup_banner{
-    background: url(../images/broker-setup.png);
-
-    background-position: center;
-    background-size: cover;
-    position: relative;
+/*white-label*/
+#white-labell{
+    padding: 80px 0;
 }
-.broker_setup_banner::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    background: radial-gradient(rgb(0 0 0), rgb(0 0 0));
-    left: 0;
-    opacity: 0.6;
-    z-index: 0;
-}
-.broker_setup_content{
+.eight-step-process{
+    padding: 80px 0;
     background: #000;
+}
+.count {
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #6d6d6b;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110px;
+    color: #f2f2ff;
+    position:absolute;
+    right:15px;
+    top: -15px;
+}
+.owl-carousel11 .benefits-sec{
+    background: #000;
+    text-align: center;
+}
+.owl-carousel11 .benefits-sec img{
+    margin:0 auto;
+}
+
+/* trading platform start*/
+.trading_platform_section{
+    padding: 80px 0;
+    background: #262626;
+}
+#owl-car-11.owl-carousel11 .benefits-sec {
+    background: #262626!important;
+}
+/* trading platform end*/
+
+/*broker setup banner start*/
+
+.broker_setup_content{
+    background: #00000078;
     padding: 80px 0;
 }
 .crm_api_section{
     padding: 80px 0;
+    background: #000;
 }
 .crm_api_section_two{
     padding: 0px 0 80px;
-/*    background: #000;*/
+    background: #000;
 }
 .border-anime {
     position: relative;
@@ -1851,9 +1903,17 @@ background: #302c26;
     padding: 80px 0;
     background: #262626;
 }
+.metatrader{
+    padding: 80px 0;
+    background: #000;
+}
 .admin-consultation{
     padding: 80px 0;
-    background: #020202;
+    background: #262626;
+}
+.admin{
+    padding: 80px 0;
+    background: #000;
 }
 /*broker setup banner End*/
 
@@ -2100,11 +2160,8 @@ background: #302c26;
   width: 120px;
 }
 
-@media (max-width: 767px) {
-  .gtco-testimonials {
-    margin-top: 20px;
-  }
-}
+
+
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
   outline: 0;
 }
@@ -2113,3 +2170,114 @@ background: #302c26;
 }
 /*Why Choose Us End*/
 
+/*Privacy policy*/
+.privacy-content{
+    padding: 80px 0;
+    background: #000;
+    color:#fff;
+}
+.white-lable-your-logo{
+    background: #000;
+    padding: 80px 0;
+}
+.white-lable-your-logo img{
+/*    transform: translateY(-180px);*/
+    /* margin-top: -180px; */
+}
+.web-development-white-label{
+    padding: 80px 0;
+    background: #262626;
+}
+.web-list {
+    background: #000;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+/* /features-section/ */
+.features-section{
+    padding: 80px 0;
+    background: #262626;
+}
+.features-image-box{
+    border-radius: 10px;
+    border: 1px solid #FFC008;
+    padding: 20px;
+    transition-duration: .2s;
+}
+.features-image-box img{
+    margin-bottom: 10px;
+}
+.bdr-box{
+    border: 1px solid #ffc008;
+    display: block;
+    border-radius: 1rem;
+    background: #262626;
+
+}
+.bdr-box ul{
+    display: inline-flex;
+    margin-bottom: 0;
+    padding: 20px;
+    gap:1rem;
+}
+.bdr-box ul .inst-box p{
+    margin: 0;
+}
+/* /features-section/ */
+.features-image-box:hover{
+    transform: translateY(-5px);
+    transition-duration: .2s;
+    background-color: #ffc008;
+}
+.features-image-box:hover img{
+filter: brightness(0) invert(1);
+}
+.features-image-box:hover p{
+
+    color: #000;
+}
+    .owl-carousel1123 .owl-stage{
+        display: flex;
+    }
+.owl-carousel1123 .owl-stage .owl-item {
+    background: #000;
+    
+    border-radius: 15px;
+}
+    #home-slider .benefits-sec{
+        background: #000;
+        
+    }
+    #home-slider .count{
+        -webkit-text-stroke-color: #FFC008;
+    }
+
+    .inst-acc-pointers ul li{
+ 
+        width: 20%;
+    }    
+    @media (max-width: 575px) {
+        .inst-acc-pointers ul li {
+            width: 48%;
+        }
+        .bdr-box ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+      }
+      @media (max-width: 767px) {
+        .gtco-testimonials {
+          margin-top: 20px;
+        }
+        .inst-acc-pointers ul li {
+          width: 48%;
+      }
+      }
+      @media (max-width: 465px) {
+      
+        .inst-acc-pointers ul li {
+          width: 100%;
+      }
+      }

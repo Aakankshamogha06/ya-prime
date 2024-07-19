@@ -1,6 +1,5 @@
-<?php include_once('./include/header.php') ?>
 
-<section class="about_banner breadcrumb-banner">
+<section class="about_banner breadcrumb-banner" style="background-image: url(public/web/images/megamenu-bg.jpg);">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -55,8 +54,40 @@
 				<p>
 					If you wish to disable cookies, you may do so through your individual browser options. More detailed information about cookie management with specific web browsers can be found at the browsers’ respective websites.
 				</p>
+				<h4>
+				Data Collection Policy
+				</h4>
+				<p>Our website collects the following information to enhance your user experience and ensure the functionality of our services:</p>
+				<li>
+					<b>Search History:</b>
+					<ul>
+						<li><b>Purpose:</b>We collect data on the searches you perform on our website to improve our services and provide you with better search results and recommendations.</li>
+						<li><b>Usage:</b>This data helps us understand trends, preferences, and user behavior, allowing us to refine our algorithms and enhance the overall user experience.</li>
+					</ul>
+					<b>Device ID:</b>
+					<ul>
+						<li><b>Purpose:</b>We collect your device's unique identifier to ensure the proper functioning of the website.</li>
+						<li><b>Usage:</b>This ID helps us manage user sessions, provide consistent service across different devices, and troubleshoot issues specific to certain devices.</li>
+					</ul>
+					<b>Data Usage and Privacy</b>
+					<ul>
+						<li><b>Exclusivity of Use:</b>The collected data is used exclusively for improving website functionality and user experience. It will not be shared, sold, or used for any other purpose.</li>
+						<li><b>Data Security:</b>We employ robust security measures to protect your data from unauthorized access, disclosure, or misuse.</li>
+						<li><b>Anonymity:</b> Where possible, data is anonymized to further protect your privacy.</li>
+					</ul>
+					<b>User Control</b>
+					<ul>
+						<li><b>Opt-Out Option:</b>Users have the option to clear their search history from within their account settings if they choose to do so.</li>
+						<li><b>Transparency:</b>Users can view the data collected about them within their account settings, ensuring transparency in our data collection practices.</li>
+					</ul>
+					<b>Your Privacy</b>
+					<ul>
+						<li><b>Commitment to Privacy:</b>Your privacy is of utmost importance to us. We are committed to protecting your personal information and ensuring that your data is handled responsibly.</li>
+						<li><b>Policy Updates:</b>We may update this policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be posted on this page, and where appropriate, notified to you by email.</li>
+					</ul>
+				</li>
+
 			</div>
 		</div>
 	</div>
 </section>
-<?php include_once('./include/footer.php') ?>

@@ -103,20 +103,23 @@ $route['request_quote/edit_request_quote/(:any)'] = 'admin/request_quote/request
 $route['request_quote/request_quote_update_data'] = 'admin/request_quote/request_quote_update_data';
 $route['request_quote/request_quote_delete/(:any)'] = 'admin/request_quote/request_quote_delete/$1';
 
-
 // WEBSITE
 $route['about-us'] = 'website/about_us';
 $route['blog/(:any)'] = 'website/blog_detail/$1';
 $route['blog'] = 'website/blog';
-$route['broker-setup'] = 'website/broker_setup';
+$route['metatrader-setup'] = 'website/metatrader_setup';
 $route['career-details'] = 'website/career_details';
 $route['careers'] = 'website/careers';
 $route['contact-us'] = 'website/contact_us';
 $route['index'] = 'website/index';
-$route['institutional-clients'] = 'website/institutional_clients';
+$route['institutional-account'] = 'website/institutional_account';
 $route['liquidity'] = 'website/liquidity';
 $route['metatrader-support'] = 'website/metatrader_support';
 $route['our-team'] = 'website/our_team';
 $route['portfolio-details'] = 'website/portfolio_details';
 $route['portfolio'] = 'website/portfolio';
 $route['why-choose-us'] = 'website/why_choose_us';
+$route['disclaimer'] = 'website/disclaimer';
+$route['terms-and-conditions'] = 'website/terms_and_conditions';
+$route['privacy-policy'] = 'website/privacy_policy';
+$route['white-label'] = 'website/white_label';

@@ -1,12 +1,12 @@
 
 
-<section class="meta_support_banner breadcrumb-banner ">
+<section class="meta_support_banner breadcrumb-banner "style="background-image: url(public/web/images/banner/metasolution.png);">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="banner_content text-center">
+			<div class="col-md-10">
+				<div class="banner_content text-left">
 					<h4 class="text-primary">
-						YaPrime MetaTrader Solutions
+						MetaTrader Support
 					</h4>
 					<h1 class="text-white about-heading">
 						Empower Your Brokerage with Seamless MT4 and MT5 Integration
@@ -55,66 +55,66 @@
 				</p>
 			</div>
 		</div>
-		<div class="row mt-4 py-5 broker-setup-row align-items-center justify-content-center">
-			<div class="col-md-6">
+		<div class="row mt-4 broker-setup-row align-items-center justify-content-center">
+			<div class="col-md-7">
 				<h4 class="text-primary">Platform Setup and Configuration</h4>
 				<p class="text-white">
 					Ensure a smooth start to your trading journey with our expert Metatrader 4/5 platform setup and configuration services. We'll guide you through the process, ensuring all settings are optimized for your specific trading strategy.
 				</p>
 			</div>
-			<div class="col-md-6 align-items-center justify-content-center d-flex">
+			<div class="col-md-5 align-items-center justify-content-center d-flex">
 				<figure class="mt-s-image text-center">
 					<img src="<?=base_url()?>public/web/images/platform-setup-and-configuration.png" alt="" width="70%" class="img-fluid aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
 				</figure>
 			</div>
 		</div>
-		<div class="row mt-4 py-5 broker-setup-row align-items-center justify-content-center">
-			<div class="col-md-6 align-items-center justify-content-center d-flex">
+		<div class="row mt-4 broker-setup-row align-items-center justify-content-center">
+			<div class="col-md-5 align-items-center justify-content-center d-flex">
 				<figure class="mt-s-image text-center">
 					<img src="<?=base_url()?>public/web/images/server-maintenance-and-monitoring.png" alt="" width="70%" class="img-fluid aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 				</figure>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-7">
 				<h4 class="text-primary">Server Maintenance and Monitoring</h4>
 				<p class="text-white">
 					Trust our team to handle the technical aspects of server maintenance and monitoring. We ensure the Metatrader main and backup servers are running at peak performance, minimizing downtime and disruptions to your trading activities.
 				</p>
 			</div>
 		</div>
-		<div class="row mt-4 py-5 broker-setup-row align-items-center justify-content-center">
-			<div class="col-md-6">
+		<div class="row mt-4 broker-setup-row align-items-center justify-content-center">
+			<div class="col-md-7">
 				<h4 class="text-primary">Security Enhancements</h4>
 				<p class="text-white">
 					Protect your assets and sensitive information with our comprehensive security enhancements. From encryption protocols to secure server configurations, we prioritize the safety of your trading environment.
 				</p>
 			</div>
-			<div class="col-md-6 align-items-center justify-content-center d-flex">
+			<div class="col-md-5 align-items-center justify-content-center d-flex">
 				<figure class="mt-s-image text-center">
 					<img src="<?=base_url()?>public/web/images/security-enhancements.png" alt="" width="70%" class="img-fluid aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
 				</figure>
 			</div>
 		</div>
-		<div class="row mt-4 py-5 broker-setup-row align-items-center justify-content-center">
-			<div class="col-md-6 align-items-center justify-content-center d-flex">
+		<div class="row mt-4 broker-setup-row align-items-center justify-content-center">
+			<div class="col-md-5 align-items-center justify-content-center d-flex">
 				<figure class="mt-s-image text-center">
 					<img src="<?=base_url()?>public/web/images/user-support-and-training.png" alt="" width="70%" class="img-fluid aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 				</figure>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-7">
 				<h4 class="text-primary">User Support and Training</h4>
 				<p class="text-white">
 					Our dedicated support team is available around the clock to assist with any user-related issues or inquiries. Additionally, we provide training resources to help users make the most of the Metatrader platform's advanced features.
 				</p>
 			</div>
 		</div>
-		<div class="row mt-4 py-5 broker-setup-row align-items-center justify-content-center">
-			<div class="col-md-6">
+		<div class="row mt-4 broker-setup-row align-items-center justify-content-center">
+			<div class="col-md-7">
 				<h4 class="text-primary">Custom Scripting and Automation</h4>
 				<p class="text-white">
 					Tailor the Metatrader platform to your specific needs with our custom scripting and automation services. Enhance your trading strategies by automating repetitive tasks and executing complex trading algorithms.
 				</p>
 			</div>
-			<div class="col-md-6 align-items-center justify-content-center d-flex">
+			<div class="col-md-5 align-items-center justify-content-center d-flex">
 				<figure class="mt-s-image text-center">
 					<img src="<?=base_url()?>public/web/images/custom-scripting-and-automation.png" alt="" width="70%" class="img-fluid aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
 				</figure>

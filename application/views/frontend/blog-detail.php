@@ -9,7 +9,8 @@
 						Discover the YaPrime
 					</h4>
 					<h1 class="text-white about-heading">
-						<?=$row->blog_name?>					
+						<?=$row->blog_name?>	
+										
 					</h1>
 					<!-- <p class="text-white">
 						At YaPrime we understand the importance of seamless and efficient Metatrader 4/5 trading platform administration for your trading endeavors. With years of experience in the financial technology industry, we have established ourselves as a trusted partner for traders seeking reliable Metatrader administration support.

@@ -1,5 +1,5 @@
 <?php
-class blog_detail_model extends CI_Model
+class Blog_detail_model extends CI_Model
 {
 
 
@@ -8,6 +8,7 @@ class blog_detail_model extends CI_Model
 		$data = [
 			'title' => $data['title'],
 			'keywords' => $data['keywords'],
+			'slug' => $data['slug'],
 			'meta_description' => $data['meta_description'],
 			'blog_name' => $data['blog_name'],
 			'blog_image' => $blog_image,
@@ -29,16 +30,10 @@ class blog_detail_model extends CI_Model
 {
     $result = $this->db->query("
         SELECT 
-            blog_detail.*, 
-            blog_category.category AS blog_category 
-        FROM 
-            blog_detail
-        LEFT JOIN 
-            blog ON blog_detail.blog_name = blog.id
-        LEFT JOIN 
-            blog_category ON blog_detail.blog_category = blog_category.id
-        ORDER BY 
-            blog_detail.blog_date DESC; 
+    * FROM blog_detail
+ORDER BY 
+    blog_detail.blog_date DESC;
+
     ");
 
     if ($result->num_rows() > 0) {
@@ -55,16 +50,13 @@ class blog_detail_model extends CI_Model
 
     $result = $this->db->query("
         SELECT 
-            blog_detail.*, 
-            blog_category.category AS blog_category 
-        FROM 
+            * FROM 
             blog_detail
         LEFT JOIN 
             blog ON blog_detail.blog_name = blog.id
-        LEFT JOIN 
-            blog_category ON blog_detail.blog_category = blog_category.id
+        
         WHERE 
-            REPLACE(LOWER(blog_detail.keywords), ' ', '-') = '$uid'
+            REPLACE(LOWER(blog_detail.slug), ' ', '-') = '$uid'
     ");
 
     if ($result->num_rows() > 0) {
@@ -89,6 +81,7 @@ class blog_detail_model extends CI_Model
 		$newdata = [
 			'title' => $data['title'],
 			'keywords' => $data['keywords'],
+			'slug' => $data['slug'],
 			'meta_description' => $data['meta_description'],
 			'blog_name' => $data['blog_name'],
 			'blog_image' => $blog_image,
@@ -121,27 +114,16 @@ class blog_detail_model extends CI_Model
 	}
 
 
-	public function role_fetch()
+
+
+    public function blog_category_fetch()
 	{
 
-		$role_data = $this->db->query("SELECT * FROM `blog`");
+		$blog_category_data = $this->db->query("SELECT * FROM `blog_category`");
 
-		$fetch = $role_data->num_rows();
+		$fetch = $blog_category_data->num_rows();
 		if ($fetch > 0) {
-			return $fetch = $role_data->result_array();
-		} else {
-			return false;
-		}
-	}
-
-    public function blog_fetch()
-	{
-
-		$blog_data = $this->db->query("SELECT * FROM `blog_category`");
-
-		$fetch = $blog_data->num_rows();
-		if ($fetch > 0) {
-			return $fetch = $blog_data->result_array();
+			return $fetch = $blog_category_data->result_array();
 		} else {
 			return false;
 		}
@@ -160,8 +142,7 @@ class blog_detail_model extends CI_Model
 	public function blog_detail_data_seo()
 {
 	$uid = $this->uri->segment(2);
-    $result = $this->db->query("SELECT * FROM `blog_detail` WHERE REPLACE(LOWER(title), ' ', '-')='$uid' ORDER BY `blog_detail`.`blog_date` DESC");
-    
+    $result = $this->db->query("SELECT * FROM `blog_detail` WHERE REPLACE(LOWER(slug), ' ', '-')='$uid' ORDER BY `blog_detail`.`blog_date` DESC");
     if ($result->num_rows() > 0) 
     {
         return $result->result(); // Return the fetched data

@@ -1,8 +1,8 @@
-<section class="liquidity_banner breadcrumb-banner ">
+<section class="liquidity_banner breadcrumb-banner "style="background-image: url(public/web/images/banner/liquidity.png);">
    <div class="container">
       <div class="row">
-         <div class="col-md-12">
-            <div class="banner_content text-center">
+         <div class="col-md-10">
+            <div class="banner_content text-left">
                <h4 class="text-primary">
                   Liquidity Solutions
                </h4>
@@ -221,153 +221,6 @@
       </div>
    </div>
 </section>
-<section class="liquidity_parts">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-12 text-center">
-            <div class="text">
-               <div class="pricing-plans-parent">
-                  <h4 class="text-primary">Precise Liquidity For Dominating The Market</h4>
-                  <h2 class="text-white">Prime Liquidity Influx Across Instruments</h2>
-                  <p class="text-white">YaPrime offers competitive STP pricing for forex pairs and other trading instruments.</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="row mt-5">
-         <div class="col-md-12">
-            <nav id="genuine_prime">
-               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <button class="nav-link active" id="nav-forex-tab" data-bs-toggle="tab" data-bs-target="#nav-forex" type="button" role="tab" aria-controls="nav-forex" aria-selected="true">FOREX</button>
-                  <button class="nav-link" id="nav-crypto-tab" data-bs-toggle="tab" data-bs-target="#nav-crypto" type="button" role="tab" aria-controls="nav-crypto" aria-selected="false" tabindex="-1">CRYPTO CFDs</button>
-                  <button class="nav-link" id="nav-commodities-tab" data-bs-toggle="tab" data-bs-target="#nav-commodities" type="button" role="tab" aria-controls="nav-commodities" aria-selected="false" tabindex="-1">COMMODITIES</button>
-                  <button class="nav-link" id="nav-indices-tab" data-bs-toggle="tab" data-bs-target="#nav-indices" type="button" role="tab" aria-controls="nav-indices" aria-selected="false" tabindex="-1">INDICES</button>
-                  <button class="nav-link" id="nav-metals-tab" data-bs-toggle="tab" data-bs-target="#nav-metals" type="button" role="tab" aria-controls="nav-metals" aria-selected="false" tabindex="-1">METALS</button>
-                  <button class="nav-link" id="nav-etfs-tab" data-bs-toggle="tab" data-bs-target="#nav-etfs" type="button" role="tab" aria-controls="nav-etfs" aria-selected="false" tabindex="-1">ETFs</button>
-                  <button class="nav-link" id="nav-energies-tab" data-bs-toggle="tab" data-bs-target="#nav-energies" type="button" role="tab" aria-controls="nav-energies" aria-selected="false" tabindex="-1">ENERGIES</button>
-                  <button class="nav-link" id="nav-equities-tab" data-bs-toggle="tab" data-bs-target="#nav-equities" type="button" role="tab" aria-controls="nav-equities" aria-selected="false" tabindex="-1">EQUITIES</button>
-
-               </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-               <div class="tab-pane fade active show" id="nav-forex" role="tabpanel" aria-labelledby="nav-forex-tab">
-                  <iframe src="https://fxpricing.com/fx-widget/market-currency-rates-widget.php?id=16,15,14,114,50,35,52,12,6,2,4,3,697,5,704,68,10,1,48,40,41,113,42,39,65,1243,62,112,38,18,19,26,23,20,1856,29,30,67,31,33,32&click_target=blank&theme=dark&tm-cr=212529&hr-cr=FFFFFF13&by-cr=28A745&sl-cr=DC3545&flags=circle&value_alignment=center&column=price,ask,bid,chg,chg_per,spread,time&lang=en&font=Arial, sans-serif" width="100%" height="1750" style="border: 1px solid #eee" scrolling="no"></iframe>
-               </div>
-               <div class="tab-pane fade" id="nav-crypto" role="tabpanel" aria-labelledby="nav-crypto-tab">
-                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">
-               </div>
-               <div class="tab-pane fade" id="nav-commodities" role="tabpanel" aria-labelledby="nav-commodities-tab">
-                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">
-               </div>
-               <div class="tab-pane fade" id="nav-indices" role="tabpanel" aria-labelledby="nav-indices-tab">
-                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">
-               </div>
-               <div class="tab-pane fade" id="nav-metals" role="tabpanel" aria-labelledby="nav-metals-tab">
-                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">
-               </div>
-               <div class="tab-pane fade" id="nav-etfs" role="tabpanel" aria-labelledby="nav-etfs-tab">
-                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">
-               </div>
-               <div class="tab-pane fade" id="nav-energies" role="tabpanel" aria-labelledby="nav-energies-tab">
-                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">
-               </div>
-               <div class="tab-pane fade" id="nav-equities" role="tabpanel" aria-labelledby="nav-equities-tab">
-                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<section class="liquidity_pointers">
-   <div class="container">
-      <div class="row text-center">
-         <div class="col-md-12">
-            <h4 class="text-primary">
-               Algorithmic Liquidity Provision
-            </h4>
-            <h2 class="text-white">
-               Intelligent Liquidity Provision Powered by Algorithms
-            </h2>
-            <p class="text-white">
-               Our algorithmic liquidity provision solutions leverage advanced algorithms and machine learning techniques to dynamically adjust liquidity levels based on market conditions, risk parameters, and order flow. By continuously analyzing and adapting to market dynamics, our algorithms ensure optimal liquidity provision, minimizing exposure to adverse market movements while capitalizing on profitable opportunities.
-            </p>
-         </div>
-      </div>
-      <div class="row gy-4 mt-4">
-         <div class="col-lg-6">
-            <div class="row gy-4">
-               <div class="col-12">
-                  <div class="careers_image_box image-box">
-                     <div class="card-body">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                           <span>
-                              <img src="<?= base_url() ?>public/web/images/lightening-fast-brokerage-setup.png" alt="" class="img-fluid">
-                           </span>
-                           <h5 class="card-title fw-semibold mb-0">Lightening Fast Brokerage Setup</h5>
-                        </div>
-                        <p class="card-text">
-                           YaPrime understands the importance of agility in today's fast-paced trading environment. Our lightning-fast brokerage setup process ensures you can hit the ground running, minimizing downtime and enabling you to capitalize on market opportunities swiftly. With a streamlined onboarding experience and intuitive platform, you can seamlessly integrate your trading strategies and kickstart your journey within minutes.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-12">
-                  <div class="careers_image_box image-box">
-                     <div class="card-body">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                           <span>
-                              <img src="<?= base_url() ?>public/web/images/effortless-sub-ccount-management.png" alt="" class="img-fluid">
-                           </span>
-                           <h5 class="card-title fw-semibold mb-0">Effortless Sub-Account Management</h5>
-                        </div>
-                        <p class="card-text">
-                           YaPrime's powerful sub-account management features empower brokers to maintain complete control over their trading operations. Whether you're managing multiple client portfolios or overseeing numerous trading strategies, our platform enables effortless account segregation and comprehensive risk management. Customize permissions, allocate funds, and monitor performance across sub-accounts with ease, ensuring efficient and organized brokerage services.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-12">
-                  <div class="careers_image_box image-box">
-                     <div class="card-body">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                           <span>
-                              <img src="<?= base_url() ?>public/web/images/mobile-accessibility.png" alt="" class="img-fluid">
-                           </span>
-                           <h5 class="card-title fw-semibold mb-0">Mobile Accessibility</h5>
-                        </div>
-                        <p class="card-text">
-                           In the dynamic world of trading, opportunities can arise at any moment. YaPrime's mobile accessibility ensures brokers stay connected to the markets, no matter where they are. Our intuitive mobile app offers a seamless trading experience, providing real-time market data, advanced charting capabilities, and robust order execution features. Stay informed, react swiftly, and enable your clients to capitalize on market movements with the power of YaPrime at their fingertips.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-12">
-                  <div class="careers_image_box image-box">
-                     <div class="card-body">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                           <span>
-                              <img src="<?= base_url() ?>public/web/images/seamless-integration.png" alt="" class="img-fluid">
-                           </span>
-                           <h5 class="card-title fw-semibold mb-0">Seamless Integration</h5>
-                        </div>
-                        <p class="card-text">
-                           YaPrime understands the importance of seamless integration in today's interconnected trading landscape. Our platform offers a wide range of APIs and robust integration capabilities, enabling you to effortlessly connect your existing systems, trading algorithms, and third-party applications. Whether you're a quantitative trading firm seeking to automate strategies or an institutional investor requiring custom reporting solutions, YaPrime's flexible architecture allows for a truly tailored trading experience.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6 ">
-            <figure class="sidebar-stickyy">
-               <lottie-player src="<?= base_url() ?>public/web/images/lottie-json/benefits.json" style="width: 70%; height: 40%; margin: 0 auto;" background="transparent" speed="1" direction="1" mode="normal" loop="" autoplay="">
-               </lottie-player>
-            </figure>
-         </div>
-      </div>
-   </div>
-</section>
 <section class="liquidity_offering">
    <div class="container">
       <div class="row">
@@ -387,7 +240,7 @@
                   Forex
                </h4>
                <p class="icon_box_para">
-                  Experience the dynamic world of Forex liquidity provision with YaPrime. We specialize in facilitating currency pairs, providing you with endless possibilities for managing liquidity effectively.
+                  Experience the dynamic world of Forex liquidity provision with YaPrime.
                </p>
             </div>
          </div>
@@ -398,7 +251,7 @@
                   Metals
                </h4>
                <p class="icon_box_para">
-                  At YaPrime, we offer liquidity access to precious metals such as gold and silver. Benefit from their unique safe-haven status and investment potential through our liquidity solutions.
+                  At YaPrime, we offer liquidity access to precious metals such as gold and silver.
                </p>
             </div>
          </div>
@@ -409,7 +262,7 @@
                   Crypto CFDs
                </h4>
                <p class="icon_box_para">
-                  Get into the world of cryptocurrency liquidity through CFDs with YaPrime. We enable you to engage in liquidity management related to digital assets like Bitcoin and Ethereum.
+                  Get into the world of cryptocurrency liquidity through CFDs with YaPrime.
                </p>
             </div>
          </div>
@@ -420,7 +273,7 @@
                   Indices Liquidity
                </h4>
                <p class="icon_box_para">
-                  YaPrime provides liquidity access to indices from major financial centers. Our solutions enable you to manage liquidity related to the performance of leading stocks.
+                  YaPrime provides liquidity access to indices from major financial centers.
                </p>
             </div>
          </div>
@@ -431,7 +284,7 @@
                   Equity CFDs
                </h4>
                <p class="icon_box_para">
-                  Invest in equity CFDs with YaPrime to manage liquidity exposure to global companies. Our services allow you to participate in liquidity management without owning physical shares.
+                  Invest in equity CFDs with YaPrime to manage liquidity exposure to global companies.
                </p>
             </div>
          </div>
@@ -442,7 +295,7 @@
                   Energy
                </h4>
                <p class="icon_box_para">
-                  Channel the power of energy markets with YaPrime's liquidity solutions, including oil and natural gas. Diversify your liquidity portfolio and seize market opportunities.
+                  Channel the power of energy markets with YaPrime's liquidity solutions, including oil and natural gas.
                </p>
             </div>
          </div>
@@ -453,12 +306,225 @@
                   ETF CFDs
                </h4>
                <p class="icon_box_para">
-                  YaPrime provides liquidity solutions for Exchange-Traded Fund (ETF) CFDs. Manage liquidity exposure to diversified portfolios of assets with flexibility and effective risk management.
+                  YaPrime provides liquidity solutions for Exchange-Traded Fund (ETF) CFDs.
                </p>
             </div>
          </div>
       </div>
 </section>
+<!--<section class="liquidity_parts">-->
+<!--   <div class="container">-->
+<!--      <div class="row">-->
+<!--         <div class="col-md-12 text-center">-->
+<!--            <div class="text">-->
+<!--               <div class="pricing-plans-parent">-->
+<!--                  <h4 class="text-primary">Precise Liquidity For Dominating The Market</h4>-->
+<!--                  <h2 class="text-white">Prime Liquidity Influx Across Instruments</h2>-->
+<!--                  <p class="text-white">YaPrime offers competitive STP pricing for forex pairs and other trading instruments.</p>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--      </div>-->
+<!--      <div class="row mt-5">-->
+<!--         <div class="col-md-12">-->
+<!--            <nav id="genuine_prime">-->
+<!--               <div class="nav nav-tabs" id="nav-tab" role="tablist">-->
+<!--                  <button class="nav-link active" id="nav-forex-tab" data-bs-toggle="tab" data-bs-target="#nav-forex" type="button" role="tab" aria-controls="nav-forex" aria-selected="true">FOREX</button>-->
+<!--                  <button class="nav-link" id="nav-crypto-tab" data-bs-toggle="tab" data-bs-target="#nav-crypto" type="button" role="tab" aria-controls="nav-crypto" aria-selected="false" tabindex="-1">CRYPTO CFDs</button>-->
+<!--                  <button class="nav-link" id="nav-commodities-tab" data-bs-toggle="tab" data-bs-target="#nav-commodities" type="button" role="tab" aria-controls="nav-commodities" aria-selected="false" tabindex="-1">COMMODITIES</button>-->
+<!--                  <button class="nav-link" id="nav-indices-tab" data-bs-toggle="tab" data-bs-target="#nav-indices" type="button" role="tab" aria-controls="nav-indices" aria-selected="false" tabindex="-1">INDICES</button>-->
+<!--                  <button class="nav-link" id="nav-metals-tab" data-bs-toggle="tab" data-bs-target="#nav-metals" type="button" role="tab" aria-controls="nav-metals" aria-selected="false" tabindex="-1">METALS</button>-->
+<!--                  <button class="nav-link" id="nav-etfs-tab" data-bs-toggle="tab" data-bs-target="#nav-etfs" type="button" role="tab" aria-controls="nav-etfs" aria-selected="false" tabindex="-1">ETFs</button>-->
+<!--                  <button class="nav-link" id="nav-energies-tab" data-bs-toggle="tab" data-bs-target="#nav-energies" type="button" role="tab" aria-controls="nav-energies" aria-selected="false" tabindex="-1">ENERGIES</button>-->
+<!--                  <button class="nav-link" id="nav-equities-tab" data-bs-toggle="tab" data-bs-target="#nav-equities" type="button" role="tab" aria-controls="nav-equities" aria-selected="false" tabindex="-1">EQUITIES</button>-->
+
+<!--               </div>-->
+<!--            </nav>-->
+<!--            <div class="tab-content" id="nav-tabContent">-->
+<!--               <div class="tab-pane fade active show" id="nav-forex" role="tabpanel" aria-labelledby="nav-forex-tab">-->
+<!--                  <iframe src="https://fxpricing.com/fx-widget/market-currency-rates-widget.php?id=16,15,14,114,50,35,52,12,6,2,4,3,697,5,704,68,10,1,48,40,41,113,42,39,65,1243,62,112,38,18,19,26,23,20,1856,29,30,67,31,33,32&click_target=blank&theme=dark&tm-cr=212529&hr-cr=FFFFFF13&by-cr=28A745&sl-cr=DC3545&flags=circle&value_alignment=center&column=price,ask,bid,chg,chg_per,spread,time&lang=en&font=Arial, sans-serif" width="100%" height="1750" style="border: 1px solid #eee;" class="api"></iframe>-->
+<!--               </div>-->
+<!--               <div class="tab-pane fade" id="nav-crypto" role="tabpanel" aria-labelledby="nav-crypto-tab">-->
+<!--                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">-->
+<!--               </div>-->
+<!--               <div class="tab-pane fade" id="nav-commodities" role="tabpanel" aria-labelledby="nav-commodities-tab">-->
+<!--                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">-->
+<!--               </div>-->
+<!--               <div class="tab-pane fade" id="nav-indices" role="tabpanel" aria-labelledby="nav-indices-tab">-->
+<!--                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">-->
+<!--               </div>-->
+<!--               <div class="tab-pane fade" id="nav-metals" role="tabpanel" aria-labelledby="nav-metals-tab">-->
+<!--                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">-->
+<!--               </div>-->
+<!--               <div class="tab-pane fade" id="nav-etfs" role="tabpanel" aria-labelledby="nav-etfs-tab">-->
+<!--                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">-->
+<!--               </div>-->
+<!--               <div class="tab-pane fade" id="nav-energies" role="tabpanel" aria-labelledby="nav-energies-tab">-->
+<!--                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">-->
+<!--               </div>-->
+<!--               <div class="tab-pane fade" id="nav-equities" role="tabpanel" aria-labelledby="nav-equities-tab">-->
+<!--                  <img src="<?= base_url() ?>public/web/images/tabs.jpeg" width="100%">-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--      </div>-->
+<!--   </div>-->
+<!--</section>-->
+<section class="liquidity_pointers">
+   <div class="container">
+      <div class="row text-center">
+         <div class="col-md-12">
+            <h4 class="text-primary">
+               Algorithmic Liquidity Provision
+            </h4>
+            <h2 class="text-white">
+               Intelligent Liquidity Provision Powered by Algorithms
+            </h2>
+            <p class="text-white">
+               Our algorithmic liquidity provision solutions leverage advanced algorithms and machine learning techniques to dynamically adjust liquidity levels based on market conditions, risk parameters, and order flow. By continuously analyzing and adapting to market dynamics, our algorithms ensure optimal liquidity provision, minimizing exposure to adverse market movements while capitalizing on profitable opportunities.
+            </p>
+         </div>
+      </div>
+      <div class="row gy-4 mt-4">
+         <div class="col-lg-6">
+            <div class="row gy-4">
+               <!-- <div class="col-12">
+                  <div class="careers_image_box image-box">
+                     <div class="card-body">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                           <span>
+                              <img src="<?= base_url() ?>public/web/images/lightening-fast-brokerage-setup.png" alt="" class="img-fluid">
+                           </span>
+                           <h5 class="card-title fw-semibold mb-0">Lightening Fast Brokerage Setup</h5>
+                        </div>
+                        <p class="card-text">
+                           YaPrime understands the importance of agility in today's fast-paced trading environment. Our lightning-fast brokerage setup process ensures you can hit the ground running, minimizing downtime and enabling you to capitalize on market opportunities swiftly.
+                        </p>
+                     </div>
+                  </div>
+               </div> -->
+               <div class="col-12">
+                  <div class="careers_image_box image-box">
+                     <div class="card-body">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                           <span>
+                              <img src="<?= base_url() ?>public/web/images/effortless-sub-ccount-management.png" alt="" class="img-fluid">
+                           </span>
+                           <h5 class="card-title fw-semibold mb-0">Effortless Sub-Account Management</h5>
+                        </div>
+                        <p class="card-text">
+                           YaPrime's powerful sub-account management features empower brokers to maintain complete control over their trading operations. Whether you're managing multiple client portfolios or overseeing numerous trading strategies, our platform enables effortless account segregation and comprehensive risk management.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12">
+                  <div class="careers_image_box image-box">
+                     <div class="card-body">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                           <span>
+                              <img src="<?= base_url() ?>public/web/images/mobile-accessibility.png" alt="" class="img-fluid">
+                           </span>
+                           <h5 class="card-title fw-semibold mb-0">Mobile Accessibility</h5>
+                        </div>
+                        <p class="card-text">
+                           In the dynamic world of trading, opportunities can arise at any moment. YaPrime's mobile accessibility ensures brokers stay connected to the markets, no matter where they are. Our intuitive mobile app offers a seamless trading experience, providing real-time market data and enable your clients to capitalize on market movements with the power of YaPrime at their fingertips.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12">
+                  <div class="careers_image_box image-box">
+                     <div class="card-body">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                           <span>
+                              <img src="<?= base_url() ?>public/web/images/seamless-integration.png" alt="" class="img-fluid">
+                           </span>
+                           <h5 class="card-title fw-semibold mb-0">Seamless Integration</h5>
+                        </div>
+                        <p class="card-text">
+                           YaPrime understands the importance of seamless integration in today's interconnected trading landscape. Our platform offers a wide range of APIs and robust integration capabilities, enabling you to effortlessly connect your existing systems, trading algorithms, and third-party applications.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-6 ">
+            <figure class="sidebar-stickyy">
+               <lottie-player src="<?= base_url() ?>public/web/images/lottie-json/forex-centricc.json" style="width: 70%; height: 40%; margin: 0 auto;" background="transparent" speed="1" direction="1" mode="normal" loop="" autoplay="">
+               </lottie-player>
+            </figure>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Liquidity Risk Management -->
+
+<section class="liquidity-risk-management">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <h2 class="text-primary text-center">
+               Risk Management
+            </h2>
+         </div>
+      </div>
+      <div class="row mt-4 align-items-center">
+         <div class="col-md-6">
+            <!-- <ul class="risk-ul">
+               <li class="risk-li">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </li>
+               <li class="risk-li">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </li>
+               <li class="risk-li">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </li>
+               <li class="risk-li">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </li>
+               <li class="risk-li">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </li>
+               <li class="risk-li">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </li>
+               <li class="risk-li">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </li>
+               <li class="risk-li">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </li>
+               <li class="risk-li">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </li>
+               <li class="risk-li">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </li>
+            </ul> -->
+            <p>
+            At YaPrime, we recognize that effective risk management is essential for Forex brokers. Our comprehensive risk management services are 
+            designed to protect your business and optimize your operations. We offer advanced tools for real-time risk monitoring, allowing you to 
+            track and analyze market exposure instantly. 
+            </p>
+            <p>
+               Our platform implements automated risk controls with preset parameters to prevent excessive 
+            exposure. To support informed decision-making, we deliver detailed risk reporting and analytics. Our risk management expertise seamlessly 
+            integrates with our liquidity solutions, ensuring you can confidently navigate market volatility while maintaining profitability in the 
+            dynamic Forex landscape.
+            </p>
+         </div>
+         <div class="col-md-6">
+            <figure class="mb-0 mx-auto">
+               <lottie-player src="<?=base_url()?>public/web/images/lottie-json/risk-management.json" style="height: 70%; width: 70%; margin:0 auto;" background="transparent" speed="1" direction="1" mode="normal" loop="" autoplay=""></lottie-player>
+               </figure>
+         </div>
+      </div>
+   </div>
+</section>
+
 <section class="liquidity_faqs">
    <div class="banner_content">
       <div class="container">

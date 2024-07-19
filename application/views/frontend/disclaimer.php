@@ -1,6 +1,4 @@
-<?php include_once('./include/header.php') ?>
-
-<section class="about_banner breadcrumb-banner">
+<section class="about_banner breadcrumb-banner" style="background-image: url(public/web/images/megamenu-bg.jpg);">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -83,4 +81,3 @@
 		</div>
 	</div>
 </section>
-<?php include_once('./include/footer.php') ?>

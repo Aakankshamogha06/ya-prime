@@ -4,8 +4,7 @@
       <div class="col-md-4">
         <img src="<?= base_url() ?>public/web/images/logo-prime.svg" class='footer-logo' height="80px" />
 
-        <p>YaPrime is a group of expert broker consultants here to guide you and help you in setting up your
-          own Forex business. Since its advent, YaPrime has advanced with the sole goal in mind – to
+        <p>YaPrime is the industry leader in the Forex and CFD markets. Since its advent, YaPrime has advanced with the sole goal in mind – to
           assist other Forex Brokers in realizing their dream and making you the expert that your heart
           always yearned to be.</p>
         <div class="social-media-icon">
@@ -27,20 +26,15 @@
               </a>
             </li>
             <li>
-              <a href="<?= base_url() ?>why-choose-us">
-                Why choose us
-              </a>
-            </li>
-            <li>
               <a href="<?= base_url() ?>blog">
                 Our Blog
               </a>
             </li>
-            <li>
+            <!-- <li>
               <a href="<?= base_url() ?>careers">
                 Careers
               </a>
-            </li>
+            </li> -->
             <!-- <li>
               <a href="<?= base_url() ?>our-team">
                 Meet our Team
@@ -64,7 +58,7 @@
               </a>
             </li>
             <li>
-              <a href="i<?= base_url() ?>institutional-account">
+              <a href="i<?= base_url() ?>institutional- ">
                 Institutional Account
               </a>
             </li>
@@ -90,7 +84,7 @@
           <!-- <p><i class="fa-solid fa-location-dot"></i> Suite 305, Griffith Corporate Centre, Kingstown P.O. Box
             1510, Beachmont Kingstown St. Vincent and the Grenadines</p> -->
           <p><i class="fa-solid fa-location-dot"></i> C/o Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius</p>
-          <p><i class="fa-solid fa-phone"></i> +357 22030234</p>
+          <p><i class="fa-solid fa-phone"></i> +971 563819813</p>
 
           <p> <i class="fa-solid fa-envelope"></i> info@yaprime.com</p>
         </div>
@@ -99,7 +93,7 @@
     </div>
 
     <hr class="footer_hr" />
-    <p>YaPrime is the industry leader in the Forex and CFD markets. registered in Mauritius. We provide certain services
+    <p>YaPrime managed by YaGroup ,registered in Mauritius, is a  industry leader in the Forex and CFD markets. We provide certain services
       like Forex White Label, Company formation, License service under the company name. Registered office @ C/o Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius. For any
       queries, Please contact us at info@yaprime.com</p>
     <p><b>Disclaimer:</b> All product, logo and company names are trademarks™ or registered® trademarks of their
@@ -487,7 +481,76 @@
     })(jQuery);
   })();
 </script>
+<script type="text/javascript">
+  (function () {
+  "use strict";
 
+  var carousels = function () {
+    $(".owl-carousel123").owlCarousel({
+      loop: true,
+      margin: 30,
+      responsiveClass: true,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout:3000,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        680: {
+          items: 2,
+          nav: false,
+          loop: false
+        },
+        1000: {
+          items: 3,
+          nav: false
+        }
+      }
+    });
+  };
+
+  (function ($) {
+    carousels();
+  })(jQuery);
+})();
+</script>
+<script type="text/javascript">
+  (function () {
+  "use strict";
+
+  var carousels = function () {
+    $(".owl-carousel1123").owlCarousel({
+      loop: true,
+      margin: 30,
+      responsiveClass: true,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout:3000,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        680: {
+          items: 2,
+          nav: false,
+          loop: false
+        },
+        1000: {
+          items: 3,
+          nav: false
+        }
+      }
+    });
+  };
+
+  (function ($) {
+    carousels();
+  })(jQuery);
+})();
+</script>
 <script>
   // mobile menu dropdows
   $(".moblie-dropdwon").on("click", function() {

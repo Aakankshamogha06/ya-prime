@@ -28,7 +28,7 @@
 					<p class="text-white"><i class="fa-solid fa-location-dot"></i> C/o Legacy Capital Co. Ltd., Level-2, Suite 201, The Catalyst, 40 Silicon Avenue, Cybercity, Ebene – 72201, Mauritius</p>
 					<p class="text-white">
 						<i class="fa-solid fa-phone"></i>
-						+357 22030234
+						+971 563819813
 					</p>
 					<p class="text-white">
 						<i class="fa-solid fa-envelope"></i>

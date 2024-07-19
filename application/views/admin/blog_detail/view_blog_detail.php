@@ -49,7 +49,8 @@
                     <td><?= substr(strip_tags($row->long_desc),0,50) ?>....
 </td>
 
-                    <td class="text-right"><a href="<?= base_url('admin/blog_detail/blog_detail_edit/' . $row->id); ?>">
+                    <td class="text-right">
+                      <a href="<?= base_url('admin/blog_detail/blog_detail_edit/' . $row->id); ?>">
                           <i class="fas fa-edit" style="font-size: 24px; color: blue;"></i></a>
                         <a href="<?= base_url('admin/blog_detail/blog_detail_delete/' . $row->id); ?>" onclick="return confirm('Are you sure want to delete ?');">
                           <i class="fas fa-trash-alt" style="font-size: 24px; color: red;"></i>

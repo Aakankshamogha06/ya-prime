@@ -1,10 +1,10 @@
 
 
-<section class="blog_banner breadcrumb-banner ">
+<section class="blog_banner breadcrumb-banner" style="background-image: url(public/web/images/banner/blog.png);">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="banner_content text-center">
+			<div class="col-md-10">
+				<div class="banner_content text-left">
 					<h4 class="text-primary">
 						Blogs
 					</h4>
@@ -27,11 +27,11 @@
         foreach($blog_detail_view as $row):?>
 			<div class="col-lg-4 col-md-6">
 				<div class="card blog-card">
-					<a href="<?=base_url()?>blog/<?=str_replace(' ','-',strtolower($row->keywords));?>">
+					<a href="<?=base_url()?>blog/<?=str_replace(' ','-',strtolower($row->slug));?>">
 						<img src="<?=base_url('uploads/').$row->blog_image;?>" class="card-img-top" alt="...">
 					</a>
 					<div class="card-body blog-content">
-		              <a href="<?=base_url()?>blog/<?=str_replace(' ','-',strtolower($row->keywords));?>">
+		              <a href="<?=base_url()?>blog/<?=str_replace(' ','-',strtolower($row->slug));?>">
 		              	<h5 class="card-title">
 						  <?=$row->blog_name?>			              </h5>
 		              </a>

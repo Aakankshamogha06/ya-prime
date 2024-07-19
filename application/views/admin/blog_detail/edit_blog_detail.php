@@ -45,16 +45,8 @@
                                     <input type="file" name="blog_image" parsley-trigger="change" class="form-control" id="blog_image"  placeholde="Blog Image  " required>
                                 </div>
                                 <div class="form-group col-md-12">
-                                <label for="blog_category" class="form-label"> Blog Category <span class="text-danger">*</span></label>
-                                    <select id="blog_category" class="form-control" name="blog_category">
-                                        <option value="">Select Blog Category</option>
-                                        <?php
-                                        $blog_fetch_data = $this->blog_detail_model->blog_fetch();
-                                        foreach ($blog_fetch_data as $data) { ?>
-                                            <option value="<?php echo $data['id']; ?>"<?php if ($data['id'] === $row->blog_category ) echo 'selected="selected"'?>><?php echo $data['category']; ?></option>
-                                        <?php } ?>
-
-                                    </select>
+                                    <label for="inputEmail4" class="form-label">Blog category  <span class="text-danger">*</span> </label>
+                                    <input type="text" name="blog_category" parsley-trigger="change" class="form-control" id="blog_category" value="<?= $row->blog_category ?>" placeholde="Blog category  " required>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -105,7 +97,5 @@
            CKEDITOR.replace('blog_desc', {
 format_tags: 'p;h1;h2;h3;h4;h5;h6'
 });
-CKEDITOR.replace('meta_description', {
-               format_tags: 'p;h1;h2;h3;h4;h5;h6'
-           });
+
 </script>
