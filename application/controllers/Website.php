@@ -37,9 +37,9 @@ class Website extends CI_Controller
         $this->load->view('frontend/include/footer');
     }
 
-    public function blog_detail()
+    public function blog_detail($slug)
     {
-        $data['blog_detail_view'] = $this->Blog_detail_model->blog_detail_data_nm();
+        $data['blog_detail_view'] = $this->Blog_detail_model->blog_detail_data_nm($slug);
         $data['blogs'] = $this->Blog_detail_model->get_recent_blogs( $limit = 3);
         $data['captcha'] = $this->generate_captcha();
         $this->load->view('frontend/include/header', $data);

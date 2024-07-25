@@ -50,7 +50,7 @@
 				<div class="contact-form">
 					<h2 class="mb-2 text-primary">Talk to us!</h2>
 					<p class="text-white">Get your exclusive invite to speak with our team of Forex experts!</p>
-					<form method="POST" action="<?= base_url('contact_us/contact_us_submit_data'); ?>" enctype="multipart/form-data" class="form-group mt-3 mt-sm-4 mb-0">
+					<form method="POST" action="<?= base_url('contact_us/contact_us_submit_data'); ?>" enctype="multipart/form-data" class="form-group mt-3 mt-sm-4 mb-0" onsubmit="showAlert()">
 						<div class="row">
 							<div class="col-6 mb-3">
 								<input class="form-control form-item" type="text" name="name" placeholder="Name" required>
@@ -66,6 +66,10 @@
 								document.getElementById('phone_number').addEventListener('input', function(e) {
 									this.value = this.value.replace(/[^0-9]/g, '');
 								});
+
+								function showAlert() {
+									alert("Your form has been submitted successfully!");
+								}
 							</script>
 
 							<div class="col-6 mb-3">
