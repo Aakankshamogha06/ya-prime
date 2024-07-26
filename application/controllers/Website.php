@@ -83,7 +83,6 @@ class Website extends CI_Controller
     public function contact_us()
     {
         $data['captcha'] = $this->generate_captcha();
-        $data['captcha'] = $this->generate_captcha();
         $this->load->view('frontend/include/header', $data);
         $this->load->view('frontend/contact-us',$data);
         $this->load->view('frontend/include/footer');
